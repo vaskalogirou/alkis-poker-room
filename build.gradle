@@ -1,9 +1,10 @@
 plugins {
-    id 'org.springframework.boot' version '2.6.7'
+    id 'org.springframework.boot' version '3.3.1'
     id 'io.spring.dependency-management' version '1.1.5'
     id 'java'
-    id 'org.flywaydb.flyway' version '6.5.1'
+    id 'org.flywaydb.flyway' version '10.15.2'
     id 'jacoco'
+    id 'com.github.ben-manes.versions' version '0.51.0'
 }
 
 flyway {
@@ -17,7 +18,7 @@ flyway {
 
 group = 'com.poker.alkis'
 version = '0.0.1-SNAPSHOT'
-sourceCompatibility = '11'
+sourceCompatibility = '17'
 
 jar {
     enabled = false
@@ -46,8 +47,8 @@ dependencies {
     compileOnly 'org.projectlombok:lombok'
     annotationProcessor 'org.projectlombok:lombok'
 
-    implementation 'org.mapstruct:mapstruct:1.5.4.Final'
-    annotationProcessor 'org.mapstruct:mapstruct-processor:1.5.4.Final'
+    implementation 'org.mapstruct:mapstruct:1.6.0.Beta2'
+    annotationProcessor 'org.mapstruct:mapstruct-processor:1.6.0.Beta2'
 
 }
 
@@ -68,7 +69,6 @@ test {
 
 jacoco {
     toolVersion = '0.8.7'
-    reportsDir = file("$buildDir/jacoco")
 }
 
 jacocoTestReport {
