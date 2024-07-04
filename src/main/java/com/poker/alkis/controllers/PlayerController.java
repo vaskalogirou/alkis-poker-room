@@ -2,7 +2,6 @@ package com.poker.alkis.controllers;
 
 import java.util.List;
 
-import javax.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PutMapping;
@@ -15,6 +14,7 @@ import com.poker.alkis.dtos.PlayerDto;
 import com.poker.alkis.exceptions.UnauthorizedException;
 import com.poker.alkis.helper.Constants;
 import com.poker.alkis.services.PlayerService;
+import jakarta.validation.Valid;
 
 @RestController
 @RequestMapping("players")

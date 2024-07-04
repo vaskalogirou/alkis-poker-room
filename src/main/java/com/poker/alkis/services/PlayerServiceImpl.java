@@ -2,7 +2,6 @@ package com.poker.alkis.services;
 
 import java.util.List;
 
-import javax.persistence.EntityNotFoundException;
 import org.springframework.stereotype.Service;
 
 import com.poker.alkis.dtos.PlayerDto;
@@ -10,6 +9,7 @@ import com.poker.alkis.entities.Player;
 import com.poker.alkis.helper.Utils;
 import com.poker.alkis.mappers.PlayerMapper;
 import com.poker.alkis.repos.PlayerRepo;
+import jakarta.persistence.EntityNotFoundException;
 
 @Service
 public class PlayerServiceImpl implements PlayerService {

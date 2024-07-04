@@ -52,7 +52,7 @@ dependencies {
 
 dependencyManagement {
     imports {
-        mavenBom 'org.springframework.boot:spring-boot-dependencies:2.7.9'
+        mavenBom 'org.springframework.boot:spring-boot-dependencies:3.0.6'
     }
 }
 
