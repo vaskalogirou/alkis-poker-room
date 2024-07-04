@@ -1,6 +1,6 @@
 package com.poker.alkis.helper;
 
-import com.github.javafaker.Faker;
+import net.datafaker.Faker;
 
 public class Utils {
     

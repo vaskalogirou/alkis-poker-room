@@ -5,8 +5,6 @@ import java.util.List;
 import javax.persistence.EntityNotFoundException;
 import org.springframework.stereotype.Service;
 
-import com.github.javafaker.Faker;
-
 import com.poker.alkis.dtos.PlayerDto;
 import com.poker.alkis.entities.Player;
 import com.poker.alkis.helper.Utils;

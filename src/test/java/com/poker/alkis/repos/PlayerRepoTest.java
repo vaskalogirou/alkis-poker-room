@@ -1,16 +1,12 @@
 package com.poker.alkis.repos;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import org.junit.jupiter.api.Test;
 
-import org.springframework.beans.factory.annotation.Autowired;
-
-import com.github.javafaker.Color;
-import com.github.javafaker.Faker;
-
 import com.poker.alkis.AlkisPokerRoomApplicationTests;
 import com.poker.alkis.entities.Player;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 class PlayerRepoTest extends AlkisPokerRoomApplicationTests {
