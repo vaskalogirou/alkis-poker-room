@@ -1,0 +1,12 @@
+#poker_session {
+    display: none;
+}
+
+th {
+    width: 100px;
+}
+
+.bar_chart {
+    width: 1200px;
+    height: 800px
+}

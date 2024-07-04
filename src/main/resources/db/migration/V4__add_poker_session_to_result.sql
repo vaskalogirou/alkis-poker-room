@@ -1,0 +1,5 @@
+BEGIN TRANSACTION;
+ALTER TABLE result ADD poker_session_id BIGINT NOT NULL;
+ALTER TABLE result ADD FOREIGN KEY (poker_session_id) REFERENCES poker_session (id);
+END
+TRANSACTION;

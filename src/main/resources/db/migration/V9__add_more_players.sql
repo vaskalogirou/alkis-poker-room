@@ -1,0 +1,9 @@
+INSERT INTO player (name, color, active) VALUES ('coulou', 'Coral', TRUE);
+INSERT INTO player (name, color, active) VALUES ('zak', 'BurlyWood', FALSE);
+INSERT INTO player (name, color, active) VALUES ('fotaras', '#0725E1', FALSE);
+INSERT INTO player (name, color, active) VALUES ('rizos', '#67B318', FALSE);
+INSERT INTO player (name, color, active) VALUES ('andreas', '#855F03', FALSE);
+INSERT INTO player (name, color, active) VALUES ('rami', '#115AEC', FALSE);
+INSERT INTO player (name, color, active) VALUES ('ntanos', '#EB5E19', FALSE);
+INSERT INTO player (name, color, active) VALUES ('fedza', '#c89e51', TRUE);
+INSERT INTO player (name, color, active) VALUES ('odysseas', 'DarkSlateBlue', FALSE);

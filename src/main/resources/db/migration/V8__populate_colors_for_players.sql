@@ -1,0 +1,9 @@
+UPDATE player SET color = 'Yellow' WHERE name = 'alkis';
+UPDATE player SET color = 'BlueViolet' WHERE name = 'vegas';
+UPDATE player SET color = 'Chartreuse' WHERE name = 'tsili';
+UPDATE player SET color = 'Brown' WHERE name = 'koulouris';
+UPDATE player SET color = 'DarkGreen' WHERE name = 'moirotsos';
+UPDATE player SET color = 'DarkRed' WHERE name = 'kostas';
+UPDATE player SET color = 'DarkKhaki' WHERE name = 'tasos';
+UPDATE player SET color = 'DodgerBlue' WHERE name = 'george';
+UPDATE player SET color = 'DeepPink' WHERE name = 'koszorg';

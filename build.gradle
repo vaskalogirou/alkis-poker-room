@@ -1,0 +1,76 @@
+plugins {
+    id 'org.springframework.boot' version '2.6.7'
+    id 'io.spring.dependency-management' version '1.1.5'
+    id 'java'
+    id 'org.flywaydb.flyway' version '6.5.1'
+    id 'jacoco'
+}
+
+flyway {
+    url = 'jdbc:postgresql://localhost:5432/alkis_data'
+    user = 'postgres'
+    password = 'admin'
+    table = 'schema_version'
+    baselineVersion = 0
+    baselineDescription = "Spring Batch tables"
+}
+
+group = 'com.poker.alkis'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '11'
+
+jar {
+    enabled = false
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    implementation 'org.springframework.boot:spring-boot-starter-web-services'
+    implementation 'org.springframework.integration:spring-integration-ftp'
+
+    implementation 'org.flywaydb:flyway-core'
+
+    implementation 'org.postgresql:postgresql'
+
+    implementation 'com.github.javafaker:javafaker:1.0.2'
+
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+
+    implementation 'org.springframework.boot:spring-boot-starter-validation'
+
+    compileOnly 'org.projectlombok:lombok'
+    annotationProcessor 'org.projectlombok:lombok'
+
+    implementation 'org.mapstruct:mapstruct:1.5.4.Final'
+    annotationProcessor 'org.mapstruct:mapstruct-processor:1.5.4.Final'
+
+}
+
+dependencyManagement {
+    imports {
+        mavenBom("org.springframework.boot:spring-boot-dependencies:2.5.6")
+    }
+
+    dependencies {
+        dependency 'org.apache.logging.log4j:log4j-api:2.16.0'
+        dependency 'org.apache.logging.log4j:log4j-to-slf4j:2.16.0'
+    }
+}
+
+test {
+    useJUnitPlatform()
+}
+
+jacoco {
+    toolVersion = '0.8.7'
+    reportsDir = file("$buildDir/jacoco")
+}
+
+jacocoTestReport {
+    dependsOn test
+}

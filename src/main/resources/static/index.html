@@ -1,0 +1,191 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>Alkis' poker room</title>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.css">
+    <link rel="stylesheet" type="text/css" href="myCss.css">
+
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.js"></script>
+
+    <!--Load the AJAX API-->
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+    <script type="text/javascript">
+        google.charts.load('current', {
+            packages: ['corechart', 'bar']
+        });
+        google.charts.setOnLoadCallback(drawBasic);
+
+        function drawBasic() {
+            $.get("/earnings?type=ACTIVE", function (pokerData) {
+                drawEarnings(pokerData, 'bar_chart_active');
+            });
+            $.get("/earnings?type=ALL", function (pokerData) {
+                drawEarnings(pokerData, 'bar_chart_all');
+            });
+        }
+
+        function drawEarnings(pokerData, divName) {
+            var table = [];
+            var headers = ['player', 'earnings', {role: 'style'}];
+            table.push(headers);
+
+            pokerData.forEach(pd => {
+                var row = [pd['player_name'], pd['net_earnings'], 'stroke-color: black; color: ' + pd["color"]];
+
+                table.push(row);
+            });
+
+            var data = google.visualization.arrayToDataTable(table);
+            var chart = new google.visualization.ColumnChart(document.getElementById(divName));
+
+            chart.draw(data);
+        }
+    </script>
+
+    <script type="text/javascript">
+
+        google.charts.load('current', {
+            'packages': ['corechart']
+        });
+        google.charts.setOnLoadCallback(drawChart);
+
+        function drawChart() {
+
+            $.get("/poker-sessions", function (pokerdata) {
+                pokerdata.sort((a, b) => (a.id > b.id) ? 1 : -1);
+
+                var player_names = [];
+                var player_colors = [];
+
+                for (var i = 0; i < pokerdata.length; i++)
+                    for (var j = 0; j < pokerdata[i].results.length; j++) {
+                        var player = pokerdata[i].results[j].player;
+                        var player_name = player.name;
+                        if (player_names.indexOf(player_name) === -1 && player_name !== '|_ total _|') {
+                            player_names.push(player_name);
+                            player_colors.push(player.color);
+                        }
+                    }
+
+                var headers = [];
+                var chart_data = [];
+                var balance = [];
+
+                headers.push('Date');
+
+                player_names.forEach(player_name => {
+                    headers.push(player_name);
+                    balance[player_name] = 0;
+                });
+
+                chart_data.push(headers);
+
+                for (var i = 0; i < pokerdata.length; i++) {
+                    var row = pokerdata[i];
+
+                    for (var j = 0; j < row.results.length; j++) {
+                        result = row.results[j];
+                        player = result.player.name;
+                        balance[player] += result.total;
+                    }
+                    pokermatch = [];
+                    pokermatch.push(row.poker_date);
+                    player_names.forEach(player => pokermatch.push(balance[player]));
+
+                    chart_data.push(pokermatch);
+                }
+
+                var data = google.visualization.arrayToDataTable(chart_data);
+
+                var options = {
+                    title: 'Poker Stats',
+                    colors: player_colors
+                };
+
+                var chart = new google.visualization.LineChart(document.getElementById('line_chart'));
+
+                chart.draw(data, options);
+            });
+
+        }
+
+    </script>
+
+    <script>
+        $(document).ready(function () {
+
+            $.get("/poker-sessions", function (data) {
+
+                for (var index = 0; index < data.length; index++) {
+                    var row = data[index];
+
+                    var tableId = 'poker_session_' + index;
+
+                    var newTable = $('#poker_session').clone().attr('id', tableId);
+
+                    var caption = row.ordinal + ") " + row.poker_date + ' at ' + row.host.name;
+                    var notes = row["notes"];
+                    if (notes) {
+                        caption += " (" + row["notes"] + ")";
+                    }
+
+                    newTable.find("caption").text(caption)
+
+                    newTable.DataTable({
+                        pageLength: row.results.length,
+                        data: row.results,
+                        columns: [
+                            {data: 'player.name'},
+                            {data: 'cash_in'},
+                            {data: 'cash_out'},
+                            {data: 'total'}
+                        ]
+                    });
+
+                    newTable.insertAfter('table:last');
+                    newTable.before("<br /><br /><br />");
+
+                }
+            });
+
+            $('#toggle_button_bar_chart_all').on('click', function () {
+                $('#bar_chart_all').toggle();
+            });
+        });
+    </script>
+
+</head>
+
+<body>
+<p>hello poker players! <a href="2022.html">(2022 data)</a>, <a href="2023.html">(2023 data)</a></p>
+
+<div id="bar_chart_active" class="bar_chart"></div>
+
+<input type="button" value="toggle" id="toggle_button_bar_chart_all">
+<div id="bar_chart_all" class="bar_chart"></div>
+
+<hr/>
+<div id="line_chart" style="width: 1200px; height: 800px"></div>
+
+<hr/>
+<table id="poker_session" class="display" style="width: 60%">
+    <caption></caption>
+    <thead>
+    <tr>
+        <th>player</th>
+        <th>cash in</th>
+        <th>cash out</th>
+        <th>total</th>
+    </tr>
+    </thead>
+</table>
+</body>
+
+
+</html>

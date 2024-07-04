@@ -1,0 +1,6 @@
+CREATE TABLE player (
+   id BIGSERIAL PRIMARY KEY NOT NULL,
+   name VARCHAR (50) UNIQUE NOT NULL
+);
+
+INSERT INTO player(name) VALUES('alkis');

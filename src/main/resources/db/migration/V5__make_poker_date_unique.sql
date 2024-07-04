@@ -1,0 +1,1 @@
+ALTER TABLE poker_session ADD UNIQUE (poker_date);
