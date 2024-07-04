@@ -32,19 +32,14 @@ dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
     implementation 'org.springframework.boot:spring-boot-starter-web'
     implementation 'org.springframework.boot:spring-boot-starter-web-services'
+    implementation 'org.springframework.boot:spring-boot-starter-validation'
     implementation 'org.springframework.integration:spring-integration-ftp'
 
     implementation 'org.flywaydb:flyway-core'
-
     implementation 'org.postgresql:postgresql'
 
-    implementation 'net.datafaker:datafaker:1.5.0'
-
-    implementation 'org.apache.commons:commons-lang3:3.3.2'
-
-    testImplementation 'org.springframework.boot:spring-boot-starter-test'
-
-    implementation 'org.springframework.boot:spring-boot-starter-validation'
+    implementation 'net.datafaker:datafaker:2.3.0'
+    implementation 'org.apache.commons:commons-lang3:3.14.0'
 
     compileOnly 'org.projectlombok:lombok'
     annotationProcessor 'org.projectlombok:lombok'
@@ -52,16 +47,12 @@ dependencies {
     implementation 'org.mapstruct:mapstruct:1.6.0.Beta2'
     annotationProcessor 'org.mapstruct:mapstruct-processor:1.6.0.Beta2'
 
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
 
 dependencyManagement {
     imports {
-        mavenBom("org.springframework.boot:spring-boot-dependencies:2.7.9")
-    }
-
-    dependencies {
-        dependency 'org.apache.logging.log4j:log4j-api:2.16.0'
-        dependency 'org.apache.logging.log4j:log4j-to-slf4j:2.16.0'
+        mavenBom 'org.springframework.boot:spring-boot-dependencies:2.7.9'
     }
 }
 
