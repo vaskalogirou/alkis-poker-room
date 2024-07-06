@@ -35,14 +35,15 @@ dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-validation'
     implementation 'org.springframework.integration:spring-integration-ftp'
 
-    implementation 'org.flywaydb:flyway-core'
-    implementation 'org.postgresql:postgresql'
+    implementation 'org.flywaydb:flyway-core:10.15.2'
+    implementation 'org.flywaydb:flyway-database-postgresql:10.15.2'
+    implementation 'org.postgresql:postgresql:42.7.3'
 
     implementation 'net.datafaker:datafaker:2.3.0'
     implementation 'org.apache.commons:commons-lang3:3.14.0'
 
-    compileOnly 'org.projectlombok:lombok'
-    annotationProcessor 'org.projectlombok:lombok'
+    compileOnly 'org.projectlombok:lombok:1.18.34'
+    annotationProcessor 'org.projectlombok:lombok:1.18.34'
 
     implementation 'org.mapstruct:mapstruct:1.6.0.Beta2'
     annotationProcessor 'org.mapstruct:mapstruct-processor:1.6.0.Beta2'
@@ -50,18 +51,12 @@ dependencies {
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
 
-dependencyManagement {
-    imports {
-        mavenBom 'org.springframework.boot:spring-boot-dependencies:3.0.6'
-    }
-}
-
 test {
     useJUnitPlatform()
 }
 
 jacoco {
-    toolVersion = '0.8.7'
+    toolVersion = '0.8.12'
 }
 
 jacocoTestReport {
