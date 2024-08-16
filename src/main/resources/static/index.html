@@ -31,12 +31,27 @@
         }
 
         function drawEarnings(pokerData, divName) {
+
+            var max_value = 0;
+            pokerData.forEach(pd => {
+                if (pd.net_earnings > max_value) {
+                    max_value = pd.net_earnings;
+                }
+            });
+
             var table = [];
-            var headers = ['player', 'earnings', {role: 'style'}];
+            var headers = ['player', 'earnings', {role: 'style'}, {role: 'annotation'}];
             table.push(headers);
 
             pokerData.forEach(pd => {
-                var row = [pd['player_name'], pd['net_earnings'], 'stroke-color: black; color: ' + pd["color"]];
+                var pd_earnings = pd['net_earnings'];
+                var annotation = "";
+
+                if (pd_earnings > 0 & pd_earnings < max_value) {
+                    annotation = "(" + (max_value - pd_earnings) + ")";
+                }
+
+                var row = [pd['player_name'], pd['net_earnings'], 'stroke-color: black; color: ' + pd["color"], annotation];
 
                 table.push(row);
             });
@@ -80,11 +95,8 @@
                 headers.push('Date');
 
                 player_names.forEach(player_name => {
-                    headers.push(player_name);
                     balance[player_name] = 0;
                 });
-
-                chart_data.push(headers);
 
                 for (var i = 0; i < pokerdata.length; i++) {
                     var row = pokerdata[i];
@@ -100,6 +112,12 @@
 
                     chart_data.push(pokermatch);
                 }
+
+                player_names.forEach(player_name => {
+                    headers.push(player_name);
+                });
+
+                chart_data.unshift(headers);
 
                 var data = google.visualization.arrayToDataTable(chart_data);
 
@@ -186,6 +204,5 @@
     </thead>
 </table>
 </body>
-
 
 </html>
