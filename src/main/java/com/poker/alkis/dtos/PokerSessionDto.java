@@ -1,25 +1,27 @@
 package com.poker.alkis.dtos;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+import com.poker.alkis.enums.Season;
+import lombok.Data;
+
 import java.util.ArrayList;
 import java.util.List;
-
-import com.fasterxml.jackson.annotation.JsonProperty;
-
-import lombok.Data;
 
 @Data
 public class PokerSessionDto {
 
-	private Long id;
+    private Long id;
 
-	private int ordinal;
+    private int ordinal;
 
-	private PlayerDto host;
+    private PlayerDto host;
 
-	private String notes;
+    private String notes;
 
-	@JsonProperty(value = "poker_date")
-	private String pokerDate;
+    private Season season;
 
-	private List<ResultDto> results = new ArrayList<>();
+    @JsonProperty(value = "poker_date")
+    private String pokerDate;
+
+    private List<ResultDto> results = new ArrayList<>();
 }
