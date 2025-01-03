@@ -4,6 +4,7 @@ import com.poker.alkis.dtos.EarningsDto;
 import com.poker.alkis.entities.Player;
 import com.poker.alkis.entities.PokerSession;
 import com.poker.alkis.enums.PlayerListType;
+import com.poker.alkis.enums.Season;
 import com.poker.alkis.repos.PlayerRepo;
 import com.poker.alkis.repos.PokerSessionRepo;
 import org.springframework.stereotype.Service;
@@ -31,7 +32,8 @@ public class EarningsServiceImpl implements EarningsService {
 
     @Override
     public List<EarningsDto> getEarnings(PlayerListType playerListType) {
-        List<PokerSession> pokerSessions = pokerSessionRepo.findAll();
+//        List<PokerSession> pokerSessions = pokerSessionRepo.findAll();
+        List<PokerSession> pokerSessions = pokerSessionRepo.findAllBySeason(Season.SEASON_2025_A);
 
         List<Player> players;
         if (PlayerListType.ACTIVE.equals(playerListType)) {

@@ -5,6 +5,7 @@ import com.poker.alkis.dtos.ResultDto;
 import com.poker.alkis.entities.Player;
 import com.poker.alkis.entities.PokerSession;
 import com.poker.alkis.entities.Result;
+import com.poker.alkis.enums.Season;
 import com.poker.alkis.mappers.PokerSessionMapper;
 import com.poker.alkis.repos.PlayerRepo;
 import com.poker.alkis.repos.PokerSessionRepo;
@@ -35,7 +36,8 @@ public class PokerSessionServiceImpl implements PokerSessionService {
 
     @Override
     public List<PokerSessionDto> getAll() {
-        List<PokerSession> pokerSessions = pokerSessionRepo.findAll();
+//        List<PokerSession> pokerSessions = pokerSessionRepo.findAll();
+        List<PokerSession> pokerSessions = pokerSessionRepo.findAllBySeason(Season.SEASON_2025_A);
 
         for (PokerSession pokerSession : pokerSessions) {
             Set<Result> results = pokerSession.getResults();
