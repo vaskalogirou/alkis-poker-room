@@ -37,8 +37,8 @@ public class FtpCommunicationController {
             throw new UnauthorizedException("Wrong password");
         }
 
-        List<EarningsDto> earningsActive = earningsService.getEarnings(PlayerListType.ACTIVE);
-        List<EarningsDto> earningsAll = earningsService.getEarnings(PlayerListType.ALL);
+        List<EarningsDto> earningsActive = earningsService.getEarnings(PlayerListType.ACTIVE, Constants.CURRENT_SEASON);
+        List<EarningsDto> earningsAll = earningsService.getEarnings(PlayerListType.ALL, Constants.CURRENT_SEASON);
 
         List<PokerSessionDto> pokerSessions = pokerSessionService.getAll();
         String content;

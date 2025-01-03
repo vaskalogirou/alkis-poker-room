@@ -26,7 +26,9 @@ public class AdminController {
 
     private final ResultRepo resultRepo;
 
-    public AdminController(final PokerSessionRepo pokerSessionRepo, final PlayerService playerService, final ResultRepo resultRepo) {
+    public AdminController(final PokerSessionRepo pokerSessionRepo,
+                           final PlayerService playerService,
+                           final ResultRepo resultRepo) {
         this.pokerSessionRepo = pokerSessionRepo;
         this.playerService = playerService;
         this.resultRepo = resultRepo;

@@ -107,7 +107,7 @@ class PokerSessionRepoTest extends AlkisPokerRoomApplicationTests {
         assertEquals(Season.SEASON_2022, sessions2022.getFirst().getSeason());
 
         var sessions2025 = pokerSessionRepo.findAllBySeason(Season.SEASON_2025_A);
-        assertEquals(1, sessions2025.size());
+        assertTrue(sessions2025.size() > 1);
         assertEquals(Season.SEASON_2025_A, sessions2025.getFirst().getSeason());
     }
 

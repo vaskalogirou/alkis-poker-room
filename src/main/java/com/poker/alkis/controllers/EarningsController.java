@@ -2,6 +2,7 @@ package com.poker.alkis.controllers;
 
 import com.poker.alkis.dtos.EarningsDto;
 import com.poker.alkis.enums.PlayerListType;
+import com.poker.alkis.helper.Constants;
 import com.poker.alkis.services.EarningsService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -24,7 +25,7 @@ public class EarningsController {
 
     @GetMapping
     public List<EarningsDto> getEarnings(@RequestParam(defaultValue = "ACTIVE") PlayerListType type) {
-        return earningsService.getEarnings(type);
+        return earningsService.getEarnings(type, Constants.CURRENT_SEASON);
     }
 
 }

@@ -31,9 +31,8 @@ public class EarningsServiceImpl implements EarningsService {
     }
 
     @Override
-    public List<EarningsDto> getEarnings(PlayerListType playerListType) {
-//        List<PokerSession> pokerSessions = pokerSessionRepo.findAll();
-        List<PokerSession> pokerSessions = pokerSessionRepo.findAllBySeason(Season.SEASON_2025_A);
+    public List<EarningsDto> getEarnings(PlayerListType playerListType, Season season) {
+        List<PokerSession> pokerSessions = pokerSessionRepo.findAllBySeason(season);
 
         List<Player> players;
         if (PlayerListType.ACTIVE.equals(playerListType)) {
