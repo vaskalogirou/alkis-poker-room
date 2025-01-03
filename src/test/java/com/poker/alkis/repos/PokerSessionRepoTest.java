@@ -84,4 +84,31 @@ class PokerSessionRepoTest extends AlkisPokerRoomApplicationTests {
         assertTrue(ramiOpt.isPresent());
     }
 
+
+    @Test
+    void findAllBySeason() {
+        Player host = playerService.getOrCreatePlayer("vasilis");
+
+        PokerSession pokerSession2022 = new PokerSession(host,
+                                                         LocalDate.now().plusYears(1),
+                                                         "test notes",
+                                                         Season.SEASON_2022);
+
+        PokerSession pokerSession2025 = new PokerSession(host,
+                                                         LocalDate.now().plusYears(2),
+                                                         "test notes",
+                                                         Season.SEASON_2025_A);
+
+        pokerSessionRepo.saveAndFlush(pokerSession2022);
+        pokerSessionRepo.saveAndFlush(pokerSession2025);
+
+        var sessions2022 = pokerSessionRepo.findAllBySeason(Season.SEASON_2022);
+        assertEquals(1, sessions2022.size());
+        assertEquals(Season.SEASON_2022, sessions2022.getFirst().getSeason());
+
+        var sessions2025 = pokerSessionRepo.findAllBySeason(Season.SEASON_2025_A);
+        assertEquals(1, sessions2025.size());
+        assertEquals(Season.SEASON_2025_A, sessions2025.getFirst().getSeason());
+    }
+
 }
