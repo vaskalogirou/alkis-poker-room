@@ -9,18 +9,18 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class FtpServiceImpl implements FtpService {
-    
+
     private final FtpRemoteFileTemplate template;
-    
+
     public FtpServiceImpl(final FtpRemoteFileTemplate template) {
         this.template = template;
     }
-    
+
     @Override
     public String uploadString(final String content, final String fileName) {
         Message<String> message = MessageBuilder.withPayload(content).setHeader(FileHeaders.FILENAME, fileName).build();
-        
+
         return template.send(message, FileExistsMode.REPLACE);
     }
-    
+
 }

@@ -9,14 +9,14 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @EqualsAndHashCode
 public class PlayerDto {
-    
+
     private String id;
-    
+
     @NotBlank(message = "A name is required")
     private String name;
-    
+
     private String color;
-    
+
     private boolean active;
-    
+
 }

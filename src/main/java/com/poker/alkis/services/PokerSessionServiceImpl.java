@@ -24,10 +24,9 @@ public class PokerSessionServiceImpl implements PokerSessionService {
 
     private final PlayerRepo playerRepo;
 
-    public PokerSessionServiceImpl(
-        final PokerSessionRepo pokerSessionRepo,
-        final PokerSessionMapper pokerSessionMapper,
-        final PlayerRepo playerRepo) {
+    public PokerSessionServiceImpl(final PokerSessionRepo pokerSessionRepo,
+                                   final PokerSessionMapper pokerSessionMapper,
+                                   final PlayerRepo playerRepo) {
 
         this.pokerSessionRepo = pokerSessionRepo;
         this.pokerSessionMapper = pokerSessionMapper;

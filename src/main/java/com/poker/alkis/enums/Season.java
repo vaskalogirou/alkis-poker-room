@@ -9,5 +9,5 @@ public enum Season {
     SEASON_2022,
     SEASON_2023,
     SEASON_2024,
-    SEASON_2025_A;
+    SEASON_2025_A
 }
