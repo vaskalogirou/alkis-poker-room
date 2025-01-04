@@ -35,9 +35,8 @@ public class PokerSessionServiceImpl implements PokerSessionService {
     }
 
     @Override
-    public List<PokerSessionDto> getAll() {
-//        List<PokerSession> pokerSessions = pokerSessionRepo.findAll();
-        List<PokerSession> pokerSessions = pokerSessionRepo.findAllBySeason(Season.SEASON_2025_A);
+    public List<PokerSessionDto> getAllBySeason(Season season) {
+        List<PokerSession> pokerSessions = pokerSessionRepo.findAllBySeason(season);
 
         for (PokerSession pokerSession : pokerSessions) {
             Set<Result> results = pokerSession.getResults();

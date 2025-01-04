@@ -1,6 +1,7 @@
 package com.poker.alkis.controllers;
 
 import com.poker.alkis.dtos.PokerSessionDto;
+import com.poker.alkis.enums.Season;
 import com.poker.alkis.exceptions.UnauthorizedException;
 import com.poker.alkis.helper.Constants;
 import com.poker.alkis.services.PokerSessionService;
@@ -23,8 +24,8 @@ public class PokerSessionController {
     }
 
     @GetMapping
-    public List<PokerSessionDto> getPokerSessions() {
-        return pokerSessionService.getAll();
+    public List<PokerSessionDto> getPokerSessions(@RequestParam(defaultValue = "SEASON_2025_A") Season season) {
+        return pokerSessionService.getAllBySeason(season);
     }
 
     @PostMapping(consumes = Constants.CONTENT_TYPE_APPLICATION_JSON)

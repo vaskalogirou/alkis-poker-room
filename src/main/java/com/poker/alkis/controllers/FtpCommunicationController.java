@@ -5,6 +5,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.poker.alkis.dtos.EarningsDto;
 import com.poker.alkis.dtos.PokerSessionDto;
 import com.poker.alkis.enums.PlayerListType;
+import com.poker.alkis.enums.Season;
 import com.poker.alkis.exceptions.UnauthorizedException;
 import com.poker.alkis.helper.Constants;
 import com.poker.alkis.services.EarningsService;
@@ -32,7 +33,7 @@ public class FtpCommunicationController {
     private final ObjectMapper objectMapper;
 
     @GetMapping(value = "send")
-    public String sendToFtp(@RequestParam String password) {
+    public String sendToFtp(@RequestParam String password, @RequestParam(defaultValue = "SEASON_2025_A") Season season) {
         if (!password.equals(Constants.PASSWORD)) {
             throw new UnauthorizedException("Wrong password");
         }
@@ -40,7 +41,7 @@ public class FtpCommunicationController {
         List<EarningsDto> earningsActive = earningsService.getEarnings(PlayerListType.ACTIVE, Constants.CURRENT_SEASON);
         List<EarningsDto> earningsAll = earningsService.getEarnings(PlayerListType.ALL, Constants.CURRENT_SEASON);
 
-        List<PokerSessionDto> pokerSessions = pokerSessionService.getAll();
+        List<PokerSessionDto> pokerSessions = pokerSessionService.getAllBySeason(season);
         String content;
         String result;
         try {
