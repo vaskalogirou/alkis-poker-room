@@ -1,6 +1,8 @@
 buildscript {
     ext {
-        flywayVersion = "10.15.2"
+        flywayVersion = "11.1.1"
+        mapstructVersion = "1.6.3"
+        lombokVersion = "1.18.36"
     }
 }
 
@@ -24,7 +26,7 @@ flyway {
 
 group = "com.poker.alkis"
 version = "0.0.1-SNAPSHOT"
-sourceCompatibility = "17"
+sourceCompatibility = "21"
 
 jar {
     enabled = false
@@ -43,16 +45,16 @@ dependencies {
 
     implementation "org.flywaydb:flyway-core:${flywayVersion}"
     implementation "org.flywaydb:flyway-database-postgresql:${flywayVersion}"
-    implementation "org.postgresql:postgresql:42.7.3"
+    implementation "org.postgresql:postgresql:42.7.4"
 
     implementation "net.datafaker:datafaker:2.4.2"
     implementation "org.apache.commons:commons-lang3:3.17.0"
 
-    compileOnly "org.projectlombok:lombok:1.18.34"
-    annotationProcessor "org.projectlombok:lombok:1.18.34"
+    compileOnly "org.projectlombok:lombok:${lombokVersion}"
+    annotationProcessor "org.projectlombok:lombok:${lombokVersion}"
 
-    implementation "org.mapstruct:mapstruct:1.6.0.Beta2"
-    annotationProcessor "org.mapstruct:mapstruct-processor:1.6.0.Beta2"
+    implementation "org.mapstruct:mapstruct:${mapstructVersion}"
+    annotationProcessor "org.mapstruct:mapstruct-processor:${mapstructVersion}"
 
     testImplementation "org.springframework.boot:spring-boot-starter-test"
 }
