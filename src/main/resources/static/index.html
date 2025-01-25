@@ -10,7 +10,8 @@
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.css">
     <link rel="stylesheet" type="text/css" href="myCss.css">
 
-    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.js"></script>
+    <script type="text/javascript" charset="utf8"
+            src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.js"></script>
 
     <!--Load the AJAX API-->
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
@@ -51,6 +52,8 @@
                     annotation = "(" + (max_value - pd_earnings) + ")";
                 }
 
+                <!-- the following line "turns off" the annotation feature -->
+                annotation = null;
                 var row = [pd['player_name'], pd['net_earnings'], 'stroke-color: black; color: ' + pd["color"], annotation];
 
                 table.push(row);
@@ -181,7 +184,8 @@
 </head>
 
 <body>
-<p>hello poker players! <a href="2022.html">(2022 data)</a>, <a href="2023.html">(2023 data)</a>, <a href="2024.html">(2024 data)</a></p>
+<p>hello poker players! <a href="2022.html">(2022 data)</a>, <a href="2023.html">(2023 data)</a>, <a href="2024.html">(2024
+    data)</a></p>
 
 <div id="bar_chart_active" class="bar_chart"></div>
 

@@ -46,6 +46,8 @@
                     annotation = "(" + (max_value - pd_earnings) + ")";
                 }
 
+                <!-- the following line "turns off" the annotation feature -->
+                annotation = null;
                 var row = [pd['player_name'], pd['net_earnings'], 'stroke-color: black; color: ' + pd["color"], annotation];
 
                 table.push(row);
