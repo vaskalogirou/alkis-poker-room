@@ -23,7 +23,6 @@ def currentJvm = Jvm.current()
 println "java: ${JavaVersion.current()}"
 println currentJvm
 
-
 flyway {
     url = "jdbc:postgresql://localhost:5432/alkis_data"
     user = "postgres"
