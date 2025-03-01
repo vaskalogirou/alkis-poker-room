@@ -9,4 +9,6 @@ public class Constants {
     public static final String CONTENT_TYPE_APPLICATION_JSON = "application/json;charset=UTF-8";
 
     public static final Season CURRENT_SEASON = Season.SEASON_2025_A;
+
+    public static final String SPACE = " ";
 }
