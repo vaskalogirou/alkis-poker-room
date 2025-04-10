@@ -1,0 +1,2790 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Alkis' poker room</title>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script src="2025_a_files/jquery.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="2025_a_files/jquery.dataTables.css">
+    <link rel="stylesheet" type="text/css" href="2025_a_files/myCss.css">
+
+    <script type="text/javascript" charset="utf8" src="2025_a_files/jquery.dataTables.js"></script>
+
+    <script type="text/javascript" src="2025_a_files/loader_002.js"></script>
+
+    <script type="text/javascript" charset="UTF-8" src="2025_a_files/loader.js"></script>
+    <link id="load-css-0" rel="stylesheet" type="text/css" href="2025_a_files/tooltip.css">
+    <link id="load-css-1" rel="stylesheet" type="text/css" href="2025_a_files/util.css">
+    <script type="text/javascript" charset="UTF-8" src="2025_a_files/jsapi_compiled_default_module.js"></script>
+    <script type="text/javascript" charset="UTF-8" src="2025_a_files/jsapi_compiled_graphics_module.js"></script>
+    <script type="text/javascript" charset="UTF-8" src="2025_a_files/jsapi_compiled_ui_module.js"></script>
+    <script type="text/javascript" charset="UTF-8" src="2025_a_files/jsapi_compiled_corechart_module.js"></script>
+    <script type="text/javascript" charset="UTF-8" src="2025_a_files/jsapi_compiled_fw_module.js"></script>
+    <script type="text/javascript" charset="UTF-8" src="2025_a_files/dygraph-tickers-combined.js"></script>
+    <script type="text/javascript" charset="UTF-8" src="2025_a_files/webfont.js"></script>
+    <script type="text/javascript" charset="UTF-8" src="2025_a_files/jsapi_compiled_bar_module.js"></script>
+</head>
+
+<body>
+
+<p>hello poker players! (these are 2025 A's data)</p>
+<a href="index.html">back to home</a>
+
+<div id="bar_chart_active" style="width: 1200px; height: 800px">
+    <div style="position: relative;">
+        <div style="position: relative; width: 1200px; height: 800px;" dir="ltr">
+            <div style="position: absolute; left: 0px; top: 0px; width: 100%; height: 100%;" aria-label="A chart.">
+                <svg width="1200" height="800" style="overflow: hidden;" aria-label="A chart.">
+                    <defs id="_ABSTRACT_RENDERER_ID_0">
+                        <clipPath id="_ABSTRACT_RENDERER_ID_1">
+                            <rect x="229" y="153" width="742" height="494"></rect>
+                        </clipPath>
+                        <filter id="_ABSTRACT_RENDERER_ID_6">
+                            <feGaussianBlur in="SourceAlpha" stdDeviation="2"></feGaussianBlur>
+                            <feOffset dx="1" dy="1"></feOffset>
+                            <feComponentTransfer>
+                                <feFuncA type="linear" slope="0.1"></feFuncA>
+                            </feComponentTransfer>
+                            <feMerge>
+                                <feMergeNode></feMergeNode>
+                                <feMergeNode in="SourceGraphic"></feMergeNode>
+                            </feMerge>
+                        </filter>
+                    </defs>
+                    <rect x="0" y="0" width="1200" height="800" stroke="none" stroke-width="0" fill="#ffffff"></rect>
+                    <g>
+                        <rect x="987" y="153" width="197" height="16" stroke="none" stroke-width="0" fill-opacity="0"
+                              fill="#ffffff"></rect>
+                        <g>
+                            <rect x="987" y="153" width="197" height="16" stroke="none" stroke-width="0"
+                                  fill-opacity="0" fill="#ffffff"></rect>
+                            <g>
+                                <text text-anchor="start" x="1025" y="166.6" font-family="Arial" font-size="16"
+                                      stroke="none" stroke-width="0" fill="#222222">earnings
+                                </text>
+                            </g>
+                            <rect x="987" y="153" width="32" height="16" stroke="none" stroke-width="0"
+                                  fill="#3366cc"></rect>
+                        </g>
+                    </g>
+                    <g>
+                        <rect x="229" y="153" width="742" height="494" stroke="none" stroke-width="0" fill-opacity="0"
+                              fill="#ffffff"></rect>
+                        <g clip-path="url(https://www.sakito.gr/poker/index.html#_ABSTRACT_RENDERER_ID_1)">
+                            <g>
+                                <rect x="229" y="646" width="742" height="1" stroke="none" stroke-width="0"
+                                      fill="#cccccc"></rect>
+                                <rect x="229" y="601" width="742" height="1" stroke="none" stroke-width="0"
+                                      fill="#cccccc"></rect>
+                                <rect x="229" y="556" width="742" height="1" stroke="none" stroke-width="0"
+                                      fill="#cccccc"></rect>
+                                <rect x="229" y="512" width="742" height="1" stroke="none" stroke-width="0"
+                                      fill="#cccccc"></rect>
+                                <rect x="229" y="467" width="742" height="1" stroke="none" stroke-width="0"
+                                      fill="#cccccc"></rect>
+                                <rect x="229" y="422" width="742" height="1" stroke="none" stroke-width="0"
+                                      fill="#cccccc"></rect>
+                                <rect x="229" y="377" width="742" height="1" stroke="none" stroke-width="0"
+                                      fill="#cccccc"></rect>
+                                <rect x="229" y="332" width="742" height="1" stroke="none" stroke-width="0"
+                                      fill="#cccccc"></rect>
+                                <rect x="229" y="287" width="742" height="1" stroke="none" stroke-width="0"
+                                      fill="#cccccc"></rect>
+                                <rect x="229" y="243" width="742" height="1" stroke="none" stroke-width="0"
+                                      fill="#cccccc"></rect>
+                                <rect x="229" y="198" width="742" height="1" stroke="none" stroke-width="0"
+                                      fill="#cccccc"></rect>
+                                <rect x="229" y="153" width="742" height="1" stroke="none" stroke-width="0"
+                                      fill="#cccccc"></rect>
+                                <rect x="229" y="624" width="742" height="1" stroke="none" stroke-width="0"
+                                      fill="#ebebeb"></rect>
+                                <rect x="229" y="579" width="742" height="1" stroke="none" stroke-width="0"
+                                      fill="#ebebeb"></rect>
+                                <rect x="229" y="534" width="742" height="1" stroke="none" stroke-width="0"
+                                      fill="#ebebeb"></rect>
+                                <rect x="229" y="489" width="742" height="1" stroke="none" stroke-width="0"
+                                      fill="#ebebeb"></rect>
+                                <rect x="229" y="444" width="742" height="1" stroke="none" stroke-width="0"
+                                      fill="#ebebeb"></rect>
+                                <rect x="229" y="400" width="742" height="1" stroke="none" stroke-width="0"
+                                      fill="#ebebeb"></rect>
+                                <rect x="229" y="355" width="742" height="1" stroke="none" stroke-width="0"
+                                      fill="#ebebeb"></rect>
+                                <rect x="229" y="310" width="742" height="1" stroke="none" stroke-width="0"
+                                      fill="#ebebeb"></rect>
+                                <rect x="229" y="265" width="742" height="1" stroke="none" stroke-width="0"
+                                      fill="#ebebeb"></rect>
+                                <rect x="229" y="220" width="742" height="1" stroke="none" stroke-width="0"
+                                      fill="#ebebeb"></rect>
+                                <rect x="229" y="175" width="742" height="1" stroke="none" stroke-width="0"
+                                      fill="#ebebeb"></rect>
+                            </g>
+                            <g>
+                                <rect x="242" y="309" width="42" height="113" stroke="#000000" stroke-width="1"
+                                      fill="#ffff00"></rect>
+                                <rect x="310" y="423" width="41" height="15" stroke="#000000" stroke-width="1"
+                                      fill="#ff7f50"></rect>
+                                <rect x="377" y="423" width="42" height="95" stroke="#000000" stroke-width="1"
+                                      fill="#c89e51"></rect>
+                                <rect x="444" y="423" width="42" height="89" stroke="#000000" stroke-width="1"
+                                      fill="#1e90ff"></rect>
+                                <rect x="512" y="320" width="41" height="102" stroke="#000000" stroke-width="1"
+                                      fill="#8b0000"></rect>
+                                <rect x="579" y="383" width="42" height="39" stroke="#000000" stroke-width="1"
+                                      fill="#ff1493"></rect>
+                                <rect x="647" y="423" width="41" height="192" stroke="#000000" stroke-width="1"
+                                      fill="#a52a2a"></rect>
+                                <rect x="714" y="423" width="42" height="57" stroke="#000000" stroke-width="1"
+                                      fill="#006400"></rect>
+                                <rect x="781" y="423" width="42" height="64" stroke="#000000" stroke-width="1"
+                                      fill="#bdb76b"></rect>
+                                <rect x="849" y="176" width="41" height="246" stroke="#000000" stroke-width="1"
+                                      fill="#7fff00"></rect>
+                                <rect x="916" y="422" width="42" height="0.5" stroke="#000000" stroke-width="1"
+                                      fill="#8a2be2"></rect>
+                            </g>
+                            <g>
+                                <rect x="229" y="422" width="742" height="1" stroke="none" stroke-width="0"
+                                      fill="#333333"></rect>
+                            </g>
+                        </g>
+                        <g></g>
+                        <g>
+                            <g>
+                                <text text-anchor="middle" x="263.1818181818182" y="670.6" font-family="Arial"
+                                      font-size="16" stroke="none" stroke-width="0" fill="#222222">alkis
+                                </text>
+                            </g>
+                            <g>
+                                <text text-anchor="middle" x="330.5454545454545" y="691.6" font-family="Arial"
+                                      font-size="16" stroke="none" stroke-width="0" fill="#222222">coulou
+                                </text>
+                            </g>
+                            <g>
+                                <text text-anchor="middle" x="397.9090909090909" y="670.6" font-family="Arial"
+                                      font-size="16" stroke="none" stroke-width="0" fill="#222222">fedza
+                                </text>
+                            </g>
+                            <g>
+                                <text text-anchor="middle" x="465.27272727272725" y="691.6" font-family="Arial"
+                                      font-size="16" stroke="none" stroke-width="0" fill="#222222">george
+                                </text>
+                            </g>
+                            <g>
+                                <text text-anchor="middle" x="532.6363636363636" y="670.6" font-family="Arial"
+                                      font-size="16" stroke="none" stroke-width="0" fill="#222222">kostas
+                                </text>
+                            </g>
+                            <g>
+                                <text text-anchor="middle" x="600" y="691.6" font-family="Arial" font-size="16"
+                                      stroke="none" stroke-width="0" fill="#222222">koszorg
+                                </text>
+                            </g>
+                            <g>
+                                <text text-anchor="middle" x="667.3636363636363" y="670.6" font-family="Arial"
+                                      font-size="16" stroke="none" stroke-width="0" fill="#222222">koulouris
+                                </text>
+                            </g>
+                            <g>
+                                <text text-anchor="middle" x="734.7272727272727" y="691.6" font-family="Arial"
+                                      font-size="16" stroke="none" stroke-width="0" fill="#222222">moirotsos
+                                </text>
+                            </g>
+                            <g>
+                                <text text-anchor="middle" x="802.090909090909" y="670.6" font-family="Arial"
+                                      font-size="16" stroke="none" stroke-width="0" fill="#222222">tasos
+                                </text>
+                            </g>
+                            <g>
+                                <text text-anchor="middle" x="869.4545454545454" y="691.6" font-family="Arial"
+                                      font-size="16" stroke="none" stroke-width="0" fill="#222222">tsili
+                                </text>
+                            </g>
+                            <g>
+                                <text text-anchor="middle" x="936.8181818181818" y="670.6" font-family="Arial"
+                                      font-size="16" stroke="none" stroke-width="0" fill="#222222">vegas
+                                </text>
+                            </g>
+                            <g>
+                                <text text-anchor="end" x="213" y="652.1" font-family="Arial" font-size="16"
+                                      stroke="none" stroke-width="0" fill="#444444">-500
+                                </text>
+                            </g>
+                            <g>
+                                <text text-anchor="end" x="213" y="607.2818" font-family="Arial" font-size="16"
+                                      stroke="none" stroke-width="0" fill="#444444">-400
+                                </text>
+                            </g>
+                            <g>
+                                <text text-anchor="end" x="213" y="562.4636" font-family="Arial" font-size="16"
+                                      stroke="none" stroke-width="0" fill="#444444">-300
+                                </text>
+                            </g>
+                            <g>
+                                <text text-anchor="end" x="213" y="517.6455" font-family="Arial" font-size="16"
+                                      stroke="none" stroke-width="0" fill="#444444">-200
+                                </text>
+                            </g>
+                            <g>
+                                <text text-anchor="end" x="213" y="472.82730000000004" font-family="Arial"
+                                      font-size="16" stroke="none" stroke-width="0" fill="#444444">-100
+                                </text>
+                            </g>
+                            <g>
+                                <text text-anchor="end" x="213" y="428.00910000000005" font-family="Arial"
+                                      font-size="16" stroke="none" stroke-width="0" fill="#444444">0
+                                </text>
+                            </g>
+                            <g>
+                                <text text-anchor="end" x="213" y="383.1909" font-family="Arial" font-size="16"
+                                      stroke="none" stroke-width="0" fill="#444444">100
+                                </text>
+                            </g>
+                            <g>
+                                <text text-anchor="end" x="213" y="338.3727" font-family="Arial" font-size="16"
+                                      stroke="none" stroke-width="0" fill="#444444">200
+                                </text>
+                            </g>
+                            <g>
+                                <text text-anchor="end" x="213" y="293.5545" font-family="Arial" font-size="16"
+                                      stroke="none" stroke-width="0" fill="#444444">300
+                                </text>
+                            </g>
+                            <g>
+                                <text text-anchor="end" x="213" y="248.7364" font-family="Arial" font-size="16"
+                                      stroke="none" stroke-width="0" fill="#444444">400
+                                </text>
+                            </g>
+                            <g>
+                                <text text-anchor="end" x="213" y="203.91819999999998" font-family="Arial"
+                                      font-size="16" stroke="none" stroke-width="0" fill="#444444">500
+                                </text>
+                            </g>
+                            <g>
+                                <text text-anchor="end" x="213" y="159.1" font-family="Arial" font-size="16"
+                                      stroke="none" stroke-width="0" fill="#444444">600
+                                </text>
+                            </g>
+                        </g>
+                    </g>
+                    <g></g>
+                </svg>
+                <div aria-label="A tabular representation of the data in the chart."
+                     style="position: absolute; left: -10000px; top: auto; width: 1px; height: 1px; overflow: hidden;">
+                    <table>
+                        <thead>
+                        <tr>
+                            <th>player</th>
+                            <th>earnings</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>alkis</td>
+                            <td>255</td>
+                        </tr>
+                        <tr>
+                            <td>coulou</td>
+                            <td>-35</td>
+                        </tr>
+                        <tr>
+                            <td>fedza</td>
+                            <td>-215</td>
+                        </tr>
+                        <tr>
+                            <td>george</td>
+                            <td>-200</td>
+                        </tr>
+                        <tr>
+                            <td>kostas</td>
+                            <td>230</td>
+                        </tr>
+                        <tr>
+                            <td>koszorg</td>
+                            <td>90</td>
+                        </tr>
+                        <tr>
+                            <td>koulouris</td>
+                            <td>-430</td>
+                        </tr>
+                        <tr>
+                            <td>moirotsos</td>
+                            <td>-130</td>
+                        </tr>
+                        <tr>
+                            <td>tasos</td>
+                            <td>-145</td>
+                        </tr>
+                        <tr>
+                            <td>tsili</td>
+                            <td>550</td>
+                        </tr>
+                        <tr>
+                            <td>vegas</td>
+                            <td>0</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div style="display: none; position: absolute; top: 810px; left: 1210px; white-space: nowrap; font-family: Arial; font-size: 16px; font-weight: bold;"
+             aria-hidden="true">550
+        </div>
+        <div></div>
+    </div>
+</div>
+
+<input type="button" value="toggle" id="toggle_button_bar_chart_all">
+<div id="bar_chart_all" class="bar_chart">
+    <div style="position: relative;">
+        <div style="position: relative; width: 1200px; height: 800px;" dir="ltr">
+            <div style="position: absolute; left: 0px; top: 0px; width: 100%; height: 100%;" aria-label="A chart.">
+                <svg width="1200" height="800" style="overflow: hidden;" aria-label="A chart.">
+                    <defs id="_ABSTRACT_RENDERER_ID_2">
+                        <clipPath id="_ABSTRACT_RENDERER_ID_3">
+                            <rect x="229" y="153" width="742" height="494"></rect>
+                        </clipPath>
+                    </defs>
+                    <rect x="0" y="0" width="1200" height="800" stroke="none" stroke-width="0" fill="#ffffff"></rect>
+                    <g>
+                        <rect x="987" y="153" width="197" height="16" stroke="none" stroke-width="0" fill-opacity="0"
+                              fill="#ffffff"></rect>
+                        <g>
+                            <rect x="987" y="153" width="197" height="16" stroke="none" stroke-width="0"
+                                  fill-opacity="0" fill="#ffffff"></rect>
+                            <g>
+                                <text text-anchor="start" x="1025" y="166.6" font-family="Arial" font-size="16"
+                                      stroke="none" stroke-width="0" fill="#222222">earnings
+                                </text>
+                            </g>
+                            <rect x="987" y="153" width="32" height="16" stroke="none" stroke-width="0"
+                                  fill="#3366cc"></rect>
+                        </g>
+                    </g>
+                    <g>
+                        <rect x="229" y="153" width="742" height="494" stroke="none" stroke-width="0" fill-opacity="0"
+                              fill="#ffffff"></rect>
+                        <g clip-path="url(https://www.sakito.gr/poker/index.html#_ABSTRACT_RENDERER_ID_3)">
+                            <g>
+                                <rect x="229" y="646" width="742" height="1" stroke="none" stroke-width="0"
+                                      fill="#cccccc"></rect>
+                                <rect x="229" y="601" width="742" height="1" stroke="none" stroke-width="0"
+                                      fill="#cccccc"></rect>
+                                <rect x="229" y="556" width="742" height="1" stroke="none" stroke-width="0"
+                                      fill="#cccccc"></rect>
+                                <rect x="229" y="512" width="742" height="1" stroke="none" stroke-width="0"
+                                      fill="#cccccc"></rect>
+                                <rect x="229" y="467" width="742" height="1" stroke="none" stroke-width="0"
+                                      fill="#cccccc"></rect>
+                                <rect x="229" y="422" width="742" height="1" stroke="none" stroke-width="0"
+                                      fill="#cccccc"></rect>
+                                <rect x="229" y="377" width="742" height="1" stroke="none" stroke-width="0"
+                                      fill="#cccccc"></rect>
+                                <rect x="229" y="332" width="742" height="1" stroke="none" stroke-width="0"
+                                      fill="#cccccc"></rect>
+                                <rect x="229" y="287" width="742" height="1" stroke="none" stroke-width="0"
+                                      fill="#cccccc"></rect>
+                                <rect x="229" y="243" width="742" height="1" stroke="none" stroke-width="0"
+                                      fill="#cccccc"></rect>
+                                <rect x="229" y="198" width="742" height="1" stroke="none" stroke-width="0"
+                                      fill="#cccccc"></rect>
+                                <rect x="229" y="153" width="742" height="1" stroke="none" stroke-width="0"
+                                      fill="#cccccc"></rect>
+                                <rect x="229" y="624" width="742" height="1" stroke="none" stroke-width="0"
+                                      fill="#ebebeb"></rect>
+                                <rect x="229" y="579" width="742" height="1" stroke="none" stroke-width="0"
+                                      fill="#ebebeb"></rect>
+                                <rect x="229" y="534" width="742" height="1" stroke="none" stroke-width="0"
+                                      fill="#ebebeb"></rect>
+                                <rect x="229" y="489" width="742" height="1" stroke="none" stroke-width="0"
+                                      fill="#ebebeb"></rect>
+                                <rect x="229" y="444" width="742" height="1" stroke="none" stroke-width="0"
+                                      fill="#ebebeb"></rect>
+                                <rect x="229" y="400" width="742" height="1" stroke="none" stroke-width="0"
+                                      fill="#ebebeb"></rect>
+                                <rect x="229" y="355" width="742" height="1" stroke="none" stroke-width="0"
+                                      fill="#ebebeb"></rect>
+                                <rect x="229" y="310" width="742" height="1" stroke="none" stroke-width="0"
+                                      fill="#ebebeb"></rect>
+                                <rect x="229" y="265" width="742" height="1" stroke="none" stroke-width="0"
+                                      fill="#ebebeb"></rect>
+                                <rect x="229" y="220" width="742" height="1" stroke="none" stroke-width="0"
+                                      fill="#ebebeb"></rect>
+                                <rect x="229" y="175" width="742" height="1" stroke="none" stroke-width="0"
+                                      fill="#ebebeb"></rect>
+                            </g>
+                            <g>
+                                <rect x="237" y="309" width="26" height="113" stroke="#000000" stroke-width="1"
+                                      fill="#ffff00"></rect>
+                                <rect x="279" y="422" width="25" height="0.5" stroke="#000000" stroke-width="1"
+                                      fill="#855f03"></rect>
+                                <rect x="320" y="423" width="25" height="15" stroke="#000000" stroke-width="1"
+                                      fill="#ff7f50"></rect>
+                                <rect x="361" y="423" width="25" height="95" stroke="#000000" stroke-width="1"
+                                      fill="#c89e51"></rect>
+                                <rect x="402" y="422" width="25" height="0.5" stroke="#000000" stroke-width="1"
+                                      fill="#0725e1"></rect>
+                                <rect x="443" y="423" width="26" height="89" stroke="#000000" stroke-width="1"
+                                      fill="#1e90ff"></rect>
+                                <rect x="484" y="320" width="26" height="102" stroke="#000000" stroke-width="1"
+                                      fill="#8b0000"></rect>
+                                <rect x="526" y="383" width="25" height="39" stroke="#000000" stroke-width="1"
+                                      fill="#ff1493"></rect>
+                                <rect x="567" y="423" width="25" height="192" stroke="#000000" stroke-width="1"
+                                      fill="#a52a2a"></rect>
+                                <rect x="608" y="423" width="25" height="57" stroke="#000000" stroke-width="1"
+                                      fill="#006400"></rect>
+                                <rect x="649" y="422" width="25" height="0.5" stroke="#000000" stroke-width="1"
+                                      fill="#eb5e19"></rect>
+                                <rect x="690" y="422" width="26" height="0.5" stroke="#000000" stroke-width="1"
+                                      fill="#483d8b"></rect>
+                                <rect x="731" y="422" width="26" height="0.5" stroke="#000000" stroke-width="1"
+                                      fill="#115aec"></rect>
+                                <rect x="773" y="422" width="25" height="0.5" stroke="#000000" stroke-width="1"
+                                      fill="#67b318"></rect>
+                                <rect x="814" y="423" width="25" height="64" stroke="#000000" stroke-width="1"
+                                      fill="#bdb76b"></rect>
+                                <rect x="855" y="176" width="25" height="246" stroke="#000000" stroke-width="1"
+                                      fill="#7fff00"></rect>
+                                <rect x="896" y="422" width="25" height="0.5" stroke="#000000" stroke-width="1"
+                                      fill="#8a2be2"></rect>
+                                <rect x="937" y="423" width="26" height="21" stroke="#000000" stroke-width="1"
+                                      fill="#deb887"></rect>
+                            </g>
+                            <g>
+                                <rect x="229" y="422" width="742" height="1" stroke="none" stroke-width="0"
+                                      fill="#333333"></rect>
+                            </g>
+                        </g>
+                        <g></g>
+                        <g>
+                            <g>
+                                <text text-anchor="middle" x="250.08333333333334" y="670.6" font-family="Arial"
+                                      font-size="16" stroke="none" stroke-width="0" fill="#222222">alkis
+                                </text>
+                            </g>
+                            <g>
+                                <text text-anchor="middle" x="291.25" y="691.6" font-family="Arial" font-size="16"
+                                      stroke="none" stroke-width="0" fill="#222222">andreas
+                                </text>
+                            </g>
+                            <g>
+                                <text text-anchor="middle" x="332.41666666666663" y="670.6" font-family="Arial"
+                                      font-size="16" stroke="none" stroke-width="0" fill="#222222">coulou
+                                </text>
+                            </g>
+                            <g>
+                                <text text-anchor="middle" x="373.5833333333333" y="691.6" font-family="Arial"
+                                      font-size="16" stroke="none" stroke-width="0" fill="#222222">fedza
+                                </text>
+                            </g>
+                            <g>
+                                <text text-anchor="middle" x="414.75" y="670.6" font-family="Arial" font-size="16"
+                                      stroke="none" stroke-width="0" fill="#222222">fotaras
+                                </text>
+                            </g>
+                            <g>
+                                <text text-anchor="middle" x="455.91666666666663" y="691.6" font-family="Arial"
+                                      font-size="16" stroke="none" stroke-width="0" fill="#222222">george
+                                </text>
+                            </g>
+                            <g>
+                                <text text-anchor="middle" x="497.0833333333333" y="670.6" font-family="Arial"
+                                      font-size="16" stroke="none" stroke-width="0" fill="#222222">kostas
+                                </text>
+                            </g>
+                            <g>
+                                <text text-anchor="middle" x="538.25" y="691.6" font-family="Arial" font-size="16"
+                                      stroke="none" stroke-width="0" fill="#222222">koszorg
+                                </text>
+                            </g>
+                            <g>
+                                <text text-anchor="middle" x="579.4166666666666" y="670.6" font-family="Arial"
+                                      font-size="16" stroke="none" stroke-width="0" fill="#222222">koulouris
+                                </text>
+                            </g>
+                            <g>
+                                <text text-anchor="middle" x="620.5833333333333" y="691.6" font-family="Arial"
+                                      font-size="16" stroke="none" stroke-width="0" fill="#222222">moirotsos
+                                </text>
+                            </g>
+                            <g>
+                                <text text-anchor="middle" x="661.75" y="670.6" font-family="Arial" font-size="16"
+                                      stroke="none" stroke-width="0" fill="#222222">ntanos
+                                </text>
+                            </g>
+                            <g>
+                                <text text-anchor="middle" x="702.9166666666666" y="691.6" font-family="Arial"
+                                      font-size="16" stroke="none" stroke-width="0" fill="#222222">odysseas
+                                </text>
+                            </g>
+                            <g>
+                                <text text-anchor="middle" x="744.0833333333333" y="670.6" font-family="Arial"
+                                      font-size="16" stroke="none" stroke-width="0" fill="#222222">rami
+                                </text>
+                            </g>
+                            <g>
+                                <text text-anchor="middle" x="785.25" y="691.6" font-family="Arial" font-size="16"
+                                      stroke="none" stroke-width="0" fill="#222222">rizos
+                                </text>
+                            </g>
+                            <g>
+                                <text text-anchor="middle" x="826.4166666666666" y="670.6" font-family="Arial"
+                                      font-size="16" stroke="none" stroke-width="0" fill="#222222">tasos
+                                </text>
+                            </g>
+                            <g>
+                                <text text-anchor="middle" x="867.5833333333333" y="691.6" font-family="Arial"
+                                      font-size="16" stroke="none" stroke-width="0" fill="#222222">tsili
+                                </text>
+                            </g>
+                            <g>
+                                <text text-anchor="middle" x="908.75" y="670.6" font-family="Arial" font-size="16"
+                                      stroke="none" stroke-width="0" fill="#222222">vegas
+                                </text>
+                            </g>
+                            <g>
+                                <text text-anchor="middle" x="949.9166666666666" y="691.6" font-family="Arial"
+                                      font-size="16" stroke="none" stroke-width="0" fill="#222222">zak
+                                </text>
+                            </g>
+                            <g>
+                                <text text-anchor="end" x="213" y="652.1" font-family="Arial" font-size="16"
+                                      stroke="none" stroke-width="0" fill="#444444">-500
+                                </text>
+                            </g>
+                            <g>
+                                <text text-anchor="end" x="213" y="607.2818" font-family="Arial" font-size="16"
+                                      stroke="none" stroke-width="0" fill="#444444">-400
+                                </text>
+                            </g>
+                            <g>
+                                <text text-anchor="end" x="213" y="562.4636" font-family="Arial" font-size="16"
+                                      stroke="none" stroke-width="0" fill="#444444">-300
+                                </text>
+                            </g>
+                            <g>
+                                <text text-anchor="end" x="213" y="517.6455" font-family="Arial" font-size="16"
+                                      stroke="none" stroke-width="0" fill="#444444">-200
+                                </text>
+                            </g>
+                            <g>
+                                <text text-anchor="end" x="213" y="472.82730000000004" font-family="Arial"
+                                      font-size="16" stroke="none" stroke-width="0" fill="#444444">-100
+                                </text>
+                            </g>
+                            <g>
+                                <text text-anchor="end" x="213" y="428.00910000000005" font-family="Arial"
+                                      font-size="16" stroke="none" stroke-width="0" fill="#444444">0
+                                </text>
+                            </g>
+                            <g>
+                                <text text-anchor="end" x="213" y="383.1909" font-family="Arial" font-size="16"
+                                      stroke="none" stroke-width="0" fill="#444444">100
+                                </text>
+                            </g>
+                            <g>
+                                <text text-anchor="end" x="213" y="338.3727" font-family="Arial" font-size="16"
+                                      stroke="none" stroke-width="0" fill="#444444">200
+                                </text>
+                            </g>
+                            <g>
+                                <text text-anchor="end" x="213" y="293.5545" font-family="Arial" font-size="16"
+                                      stroke="none" stroke-width="0" fill="#444444">300
+                                </text>
+                            </g>
+                            <g>
+                                <text text-anchor="end" x="213" y="248.7364" font-family="Arial" font-size="16"
+                                      stroke="none" stroke-width="0" fill="#444444">400
+                                </text>
+                            </g>
+                            <g>
+                                <text text-anchor="end" x="213" y="203.91819999999998" font-family="Arial"
+                                      font-size="16" stroke="none" stroke-width="0" fill="#444444">500
+                                </text>
+                            </g>
+                            <g>
+                                <text text-anchor="end" x="213" y="159.1" font-family="Arial" font-size="16"
+                                      stroke="none" stroke-width="0" fill="#444444">600
+                                </text>
+                            </g>
+                        </g>
+                    </g>
+                    <g></g>
+                </svg>
+                <div aria-label="A tabular representation of the data in the chart."
+                     style="position: absolute; left: -10000px; top: auto; width: 1px; height: 1px; overflow: hidden;">
+                    <table>
+                        <thead>
+                        <tr>
+                            <th>player</th>
+                            <th>earnings</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>alkis</td>
+                            <td>255</td>
+                        </tr>
+                        <tr>
+                            <td>andreas</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>coulou</td>
+                            <td>-35</td>
+                        </tr>
+                        <tr>
+                            <td>fedza</td>
+                            <td>-215</td>
+                        </tr>
+                        <tr>
+                            <td>fotaras</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>george</td>
+                            <td>-200</td>
+                        </tr>
+                        <tr>
+                            <td>kostas</td>
+                            <td>230</td>
+                        </tr>
+                        <tr>
+                            <td>koszorg</td>
+                            <td>90</td>
+                        </tr>
+                        <tr>
+                            <td>koulouris</td>
+                            <td>-430</td>
+                        </tr>
+                        <tr>
+                            <td>moirotsos</td>
+                            <td>-130</td>
+                        </tr>
+                        <tr>
+                            <td>ntanos</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>odysseas</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>rami</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>rizos</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>tasos</td>
+                            <td>-145</td>
+                        </tr>
+                        <tr>
+                            <td>tsili</td>
+                            <td>550</td>
+                        </tr>
+                        <tr>
+                            <td>vegas</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>zak</td>
+                            <td>-50</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div style="display: none; position: absolute; top: 810px; left: 1210px; white-space: nowrap; font-family: Arial; font-size: 16px;"
+             aria-hidden="true">earnings
+        </div>
+        <div></div>
+    </div>
+</div>
+
+<hr>
+<div id="line_chart" style="width: 1200px; height: 800px">
+    <div style="position: relative;">
+        <div style="position: relative; width: 1200px; height: 800px;" dir="ltr">
+            <div style="position: absolute; left: 0px; top: 0px; width: 100%; height: 100%;" aria-label="A chart.">
+                <svg width="1200" height="800" style="overflow: hidden;" aria-label="A chart.">
+                    <defs id="_ABSTRACT_RENDERER_ID_4">
+                        <clipPath id="_ABSTRACT_RENDERER_ID_5">
+                            <rect x="229" y="153" width="742" height="494"></rect>
+                        </clipPath>
+                    </defs>
+                    <rect x="0" y="0" width="1200" height="800" stroke="none" stroke-width="0" fill="#ffffff"></rect>
+                    <g>
+                        <text text-anchor="start" x="229" y="124.6" font-family="Arial" font-size="16"
+                              font-weight="bold" stroke="none" stroke-width="0" fill="#000000">Poker Stats
+                        </text>
+                        <rect x="229" y="111" width="742" height="16" stroke="none" stroke-width="0" fill-opacity="0"
+                              fill="#ffffff"></rect>
+                    </g>
+                    <g>
+                        <rect x="987" y="153" width="197" height="276" stroke="none" stroke-width="0" fill-opacity="0"
+                              fill="#ffffff"></rect>
+                        <g>
+                            <rect x="987" y="153" width="197" height="16" stroke="none" stroke-width="0"
+                                  fill-opacity="0" fill="#ffffff"></rect>
+                            <g>
+                                <text text-anchor="start" x="1025" y="166.6" font-family="Arial" font-size="16"
+                                      stroke="none" stroke-width="0" fill="#222222">alkis
+                                </text>
+                            </g>
+                            <path d="M987,161L1019,161" stroke="#ffff00" stroke-width="2" fill-opacity="1"
+                                  fill="none"></path>
+                        </g>
+                        <g>
+                            <rect x="987" y="179" width="197" height="16" stroke="none" stroke-width="0"
+                                  fill-opacity="0" fill="#ffffff"></rect>
+                            <g>
+                                <text text-anchor="start" x="1025" y="192.6" font-family="Arial" font-size="16"
+                                      stroke="none" stroke-width="0" fill="#222222">fedza
+                                </text>
+                            </g>
+                            <path d="M987,187L1019,187" stroke="#c89e51" stroke-width="2" fill-opacity="1"
+                                  fill="none"></path>
+                        </g>
+                        <g>
+                            <rect x="987" y="205" width="197" height="16" stroke="none" stroke-width="0"
+                                  fill-opacity="0" fill="#ffffff"></rect>
+                            <g>
+                                <text text-anchor="start" x="1025" y="218.6" font-family="Arial" font-size="16"
+                                      stroke="none" stroke-width="0" fill="#222222">george
+                                </text>
+                            </g>
+                            <path d="M987,213L1019,213" stroke="#1e90ff" stroke-width="2" fill-opacity="1"
+                                  fill="none"></path>
+                        </g>
+                        <g>
+                            <rect x="987" y="231" width="197" height="16" stroke="none" stroke-width="0"
+                                  fill-opacity="0" fill="#ffffff"></rect>
+                            <g>
+                                <text text-anchor="start" x="1025" y="244.6" font-family="Arial" font-size="16"
+                                      stroke="none" stroke-width="0" fill="#222222">kostas
+                                </text>
+                            </g>
+                            <path d="M987,239L1019,239" stroke="#8b0000" stroke-width="2" fill-opacity="1"
+                                  fill="none"></path>
+                        </g>
+                        <g>
+                            <rect x="987" y="257" width="197" height="16" stroke="none" stroke-width="0"
+                                  fill-opacity="0" fill="#ffffff"></rect>
+                            <g>
+                                <text text-anchor="start" x="1025" y="270.6" font-family="Arial" font-size="16"
+                                      stroke="none" stroke-width="0" fill="#222222">koszorg
+                                </text>
+                            </g>
+                            <path d="M987,265L1019,265" stroke="#ff1493" stroke-width="2" fill-opacity="1"
+                                  fill="none"></path>
+                        </g>
+                        <g>
+                            <rect x="987" y="283" width="197" height="16" stroke="none" stroke-width="0"
+                                  fill-opacity="0" fill="#ffffff"></rect>
+                            <g>
+                                <text text-anchor="start" x="1025" y="296.6" font-family="Arial" font-size="16"
+                                      stroke="none" stroke-width="0" fill="#222222">koulouris
+                                </text>
+                            </g>
+                            <path d="M987,291L1019,291" stroke="#a52a2a" stroke-width="2" fill-opacity="1"
+                                  fill="none"></path>
+                        </g>
+                        <g>
+                            <rect x="987" y="309" width="197" height="16" stroke="none" stroke-width="0"
+                                  fill-opacity="0" fill="#ffffff"></rect>
+                            <g>
+                                <text text-anchor="start" x="1025" y="322.6" font-family="Arial" font-size="16"
+                                      stroke="none" stroke-width="0" fill="#222222">moirotsos
+                                </text>
+                            </g>
+                            <path d="M987,317L1019,317" stroke="#006400" stroke-width="2" fill-opacity="1"
+                                  fill="none"></path>
+                        </g>
+                        <g>
+                            <rect x="987" y="335" width="197" height="16" stroke="none" stroke-width="0"
+                                  fill-opacity="0" fill="#ffffff"></rect>
+                            <g>
+                                <text text-anchor="start" x="1025" y="348.6" font-family="Arial" font-size="16"
+                                      stroke="none" stroke-width="0" fill="#222222">tasos
+                                </text>
+                            </g>
+                            <path d="M987,343L1019,343" stroke="#bdb76b" stroke-width="2" fill-opacity="1"
+                                  fill="none"></path>
+                        </g>
+                        <g>
+                            <rect x="987" y="361" width="197" height="16" stroke="none" stroke-width="0"
+                                  fill-opacity="0" fill="#ffffff"></rect>
+                            <g>
+                                <text text-anchor="start" x="1025" y="374.6" font-family="Arial" font-size="16"
+                                      stroke="none" stroke-width="0" fill="#222222">tsili
+                                </text>
+                            </g>
+                            <path d="M987,369L1019,369" stroke="#7fff00" stroke-width="2" fill-opacity="1"
+                                  fill="none"></path>
+                        </g>
+                        <g>
+                            <rect x="987" y="387" width="197" height="16" stroke="none" stroke-width="0"
+                                  fill-opacity="0" fill="#ffffff"></rect>
+                            <g>
+                                <text text-anchor="start" x="1025" y="400.6" font-family="Arial" font-size="16"
+                                      stroke="none" stroke-width="0" fill="#222222">zak
+                                </text>
+                            </g>
+                            <path d="M987,395L1019,395" stroke="#deb887" stroke-width="2" fill-opacity="1"
+                                  fill="none"></path>
+                        </g>
+                        <g>
+                            <rect x="987" y="413" width="197" height="16" stroke="none" stroke-width="0"
+                                  fill-opacity="0" fill="#ffffff"></rect>
+                            <g>
+                                <text text-anchor="start" x="1025" y="426.6" font-family="Arial" font-size="16"
+                                      stroke="none" stroke-width="0" fill="#222222">coulou
+                                </text>
+                            </g>
+                            <path d="M987,421L1019,421" stroke="#ff7f50" stroke-width="2" fill-opacity="1"
+                                  fill="none"></path>
+                        </g>
+                    </g>
+                    <g>
+                        <rect x="229" y="153" width="742" height="494" stroke="none" stroke-width="0" fill-opacity="0"
+                              fill="#ffffff"></rect>
+                        <g clip-path="url(https://www.sakito.gr/poker/index.html#_ABSTRACT_RENDERER_ID_5)">
+                            <g>
+                                <rect x="229" y="646" width="742" height="1" stroke="none" stroke-width="0"
+                                      fill="#cccccc"></rect>
+                                <rect x="229" y="601" width="742" height="1" stroke="none" stroke-width="0"
+                                      fill="#cccccc"></rect>
+                                <rect x="229" y="556" width="742" height="1" stroke="none" stroke-width="0"
+                                      fill="#cccccc"></rect>
+                                <rect x="229" y="512" width="742" height="1" stroke="none" stroke-width="0"
+                                      fill="#cccccc"></rect>
+                                <rect x="229" y="467" width="742" height="1" stroke="none" stroke-width="0"
+                                      fill="#cccccc"></rect>
+                                <rect x="229" y="422" width="742" height="1" stroke="none" stroke-width="0"
+                                      fill="#cccccc"></rect>
+                                <rect x="229" y="377" width="742" height="1" stroke="none" stroke-width="0"
+                                      fill="#cccccc"></rect>
+                                <rect x="229" y="332" width="742" height="1" stroke="none" stroke-width="0"
+                                      fill="#cccccc"></rect>
+                                <rect x="229" y="287" width="742" height="1" stroke="none" stroke-width="0"
+                                      fill="#cccccc"></rect>
+                                <rect x="229" y="243" width="742" height="1" stroke="none" stroke-width="0"
+                                      fill="#cccccc"></rect>
+                                <rect x="229" y="198" width="742" height="1" stroke="none" stroke-width="0"
+                                      fill="#cccccc"></rect>
+                                <rect x="229" y="153" width="742" height="1" stroke="none" stroke-width="0"
+                                      fill="#cccccc"></rect>
+                                <rect x="229" y="624" width="742" height="1" stroke="none" stroke-width="0"
+                                      fill="#ebebeb"></rect>
+                                <rect x="229" y="579" width="742" height="1" stroke="none" stroke-width="0"
+                                      fill="#ebebeb"></rect>
+                                <rect x="229" y="534" width="742" height="1" stroke="none" stroke-width="0"
+                                      fill="#ebebeb"></rect>
+                                <rect x="229" y="489" width="742" height="1" stroke="none" stroke-width="0"
+                                      fill="#ebebeb"></rect>
+                                <rect x="229" y="444" width="742" height="1" stroke="none" stroke-width="0"
+                                      fill="#ebebeb"></rect>
+                                <rect x="229" y="400" width="742" height="1" stroke="none" stroke-width="0"
+                                      fill="#ebebeb"></rect>
+                                <rect x="229" y="355" width="742" height="1" stroke="none" stroke-width="0"
+                                      fill="#ebebeb"></rect>
+                                <rect x="229" y="310" width="742" height="1" stroke="none" stroke-width="0"
+                                      fill="#ebebeb"></rect>
+                                <rect x="229" y="265" width="742" height="1" stroke="none" stroke-width="0"
+                                      fill="#ebebeb"></rect>
+                                <rect x="229" y="220" width="742" height="1" stroke="none" stroke-width="0"
+                                      fill="#ebebeb"></rect>
+                                <rect x="229" y="175" width="742" height="1" stroke="none" stroke-width="0"
+                                      fill="#ebebeb"></rect>
+                            </g>
+                            <g>
+                                <rect x="229" y="422" width="742" height="1" stroke="none" stroke-width="0"
+                                      fill="#333333"></rect>
+                            </g>
+                            <g>
+                                <path d="M249,417.9272727272727L288,435.8545454545454L327,438.0954545454545L366,464.9863636363636L405,469.4681818181818L444,460.50454545454545L483,487.3954545454545L522,464.9863636363636L561,431.3727272727272L600,435.8545454545454L639,426.8909090909091L678,424.65L717,404.48181818181814L756,404.48181818181814L795,413.44545454545454L834,388.7954545454545L873,370.86818181818177L912,335.01363636363635L951,308.1227272727273"
+                                      stroke="#ffff00" stroke-width="2" fill-opacity="1" fill="none"></path>
+                                <path d="M249,391.0363636363636L288,426.8909090909091L327,456.02272727272725L366,456.02272727272725L405,456.02272727272725L444,456.02272727272725L483,456.02272727272725L522,464.9863636363636L561,464.9863636363636L600,500.84090909090907L639,500.84090909090907L678,500.84090909090907L717,500.84090909090907L756,491.8772727272727L795,491.8772727272727L834,512.0454545454545L873,512.0454545454545L912,512.0454545454545L951,518.7681818181818"
+                                      stroke="#c89e51" stroke-width="2" fill-opacity="1" fill="none"></path>
+                                <path d="M249,406.72272727272724L288,415.6863636363636L327,415.6863636363636L366,415.6863636363636L405,440.3363636363636L444,424.65L483,447.05909090909086L522,438.0954545454545L561,433.6136363636363L600,433.6136363636363L639,420.1681818181818L678,451.54090909090905L717,509.8045454545454L756,509.8045454545454L795,509.8045454545454L834,509.8045454545454L873,491.8772727272727L912,478.43181818181813L951,512.0454545454545"
+                                      stroke="#1e90ff" stroke-width="2" fill-opacity="1" fill="none"></path>
+                                <path d="M249,395.5181818181818L288,408.96363636363634L327,375.34999999999997L366,370.86818181818177L405,357.42272727272723L444,348.4590909090909L483,339.49545454545455L522,366.3863636363636L561,366.3863636363636L600,346.2181818181818L639,335.01363636363635L678,355.18181818181813L717,368.6272727272727L756,366.3863636363636L795,379.83181818181816L834,357.42272727272723L873,355.18181818181813L912,319.3272727272727L951,319.3272727272727"
+                                      stroke="#8b0000" stroke-width="2" fill-opacity="1" fill="none"></path>
+                                <path d="M249,399.99999999999994L288,384.3136363636363L327,384.3136363636363L366,382.07272727272726L405,397.7590909090909L444,408.96363636363634L483,429.1318181818182L522,417.9272727272727L561,417.9272727272727L600,435.8545454545454L639,422.4090909090909L678,391.0363636363636L717,370.86818181818177L756,373.10909090909087L795,357.42272727272723L834,310.3636363636363L873,332.77272727272725L912,359.66363636363633L951,382.07272727272726"
+                                      stroke="#ff1493" stroke-width="2" fill-opacity="1" fill="none"></path>
+                                <path d="M249,460.50454545454545L288,471.7090909090909L327,503.08181818181816L366,538.9363636363636L405,538.9363636363636L444,559.1045454545454L483,572.55L522,592.7181818181818L561,583.7545454545455L600,601.6818181818181L639,585.9954545454545L678,581.5136363636364L717,547.9L756,565.8272727272727L795,556.8636363636364L834,592.7181818181818L873,559.1045454545454L912,585.9954545454545L951,615.1272727272727"
+                                      stroke="#a52a2a" stroke-width="2" fill-opacity="1" fill="none"></path>
+                                <path d="M249,438.0954545454545L288,422.4090909090909L327,433.6136363636363L366,422.4090909090909L405,397.7590909090909L444,399.99999999999994L483,350.7L522,337.25454545454545L561,350.7L600,310.3636363636363L639,373.10909090909087L678,373.10909090909087L717,388.7954545454545L756,388.7954545454545L795,411.20454545454544L834,424.65L873,449.29999999999995L912,480.67272727272723L951,480.67272727272723"
+                                      stroke="#006400" stroke-width="2" fill-opacity="1" fill="none"></path>
+                                <path d="M249,449.29999999999995L288,433.6136363636363L327,451.54090909090905L366,451.54090909090905L405,444.8181818181818L444,444.8181818181818L483,406.72272727272724L522,406.72272727272724L561,440.3363636363636L600,480.67272727272723L639,480.67272727272723L678,487.3954545454545L717,487.3954545454545L756,487.3954545454545L795,487.3954545454545L834,487.3954545454545L873,487.3954545454545L912,487.3954545454545L951,487.3954545454545"
+                                      stroke="#bdb76b" stroke-width="2" fill-opacity="1" fill="none"></path>
+                                <path d="M249,420.1681818181818L288,379.83181818181816L327,339.49545454545455L366,290.1954545454545L405,290.1954545454545L444,290.1954545454545L483,285.71363636363634L522,285.71363636363634L561,294.6772727272727L600,238.65454545454543L639,238.65454545454543L678,220.7272727272727L717,216.24545454545452L756,207.28181818181815L795,200.55909090909088L834,200.55909090909088L873,225.2090909090909L912,225.2090909090909L951,175.90909090909088"
+                                      stroke="#7fff00" stroke-width="2" fill-opacity="1" fill="none"></path>
+                                <path d="M249,444.8181818181818L288,444.8181818181818L327,444.8181818181818L366,444.8181818181818L405,444.8181818181818L444,444.8181818181818L483,444.8181818181818L522,444.8181818181818L561,444.8181818181818L600,444.8181818181818L639,444.8181818181818L678,444.8181818181818L717,444.8181818181818L756,444.8181818181818L795,444.8181818181818L834,444.8181818181818L873,444.8181818181818L912,444.8181818181818L951,444.8181818181818"
+                                      stroke="#deb887" stroke-width="2" fill-opacity="1" fill="none"></path>
+                                <path d="M249,422.4090909090909L288,422.4090909090909L327,422.4090909090909L366,422.4090909090909L405,422.4090909090909L444,422.4090909090909L483,440.3363636363636L522,440.3363636363636L561,440.3363636363636L600,440.3363636363636L639,440.3363636363636L678,438.0954545454545L717,438.0954545454545L756,438.0954545454545L795,438.0954545454545L834,462.7454545454545L873,462.7454545454545L912,462.7454545454545L951,438.0954545454545"
+                                      stroke="#ff7f50" stroke-width="2" fill-opacity="1" fill="none"></path>
+                            </g>
+                        </g>
+                        <g></g>
+                        <g>
+                            <g>
+                                <text text-anchor="end" x="251.8" y="669.8497422611929" font-family="Arial"
+                                      font-size="16" transform="rotate(-30 251.8 669.8497422611929)" stroke="none"
+                                      stroke-width="0" fill="#222222">02 January 2025
+                                </text>
+                            </g>
+                            <g>
+                                <text text-anchor="end" x="290.8" y="669.8497422611929" font-family="Arial"
+                                      font-size="16" transform="rotate(-30 290.8 669.8497422611929)" stroke="none"
+                                      stroke-width="0" fill="#222222">08 January 2025
+                                </text>
+                            </g>
+                            <g>
+                                <text text-anchor="end" x="329.8" y="669.8497422611929" font-family="Arial"
+                                      font-size="16" transform="rotate(-30 329.8 669.8497422611929)" stroke="none"
+                                      stroke-width="0" fill="#222222">16 January 2025
+                                </text>
+                            </g>
+                            <g>
+                                <text text-anchor="end" x="368.8" y="669.8497422611929" font-family="Arial"
+                                      font-size="16" transform="rotate(-30 368.8 669.8497422611929)" stroke="none"
+                                      stroke-width="0" fill="#222222">22 January 2025
+                                </text>
+                            </g>
+                            <g>
+                                <text text-anchor="end" x="407.8" y="669.8497422611929" font-family="Arial"
+                                      font-size="16" transform="rotate(-30 407.8 669.8497422611929)" stroke="none"
+                                      stroke-width="0" fill="#222222">24 January 2025
+                                </text>
+                            </g>
+                            <g>
+                                <text text-anchor="end" x="446.8" y="669.8497422611929" font-family="Arial"
+                                      font-size="16" transform="rotate(-30 446.8 669.8497422611929)" stroke="none"
+                                      stroke-width="0" fill="#222222">25 January 2025
+                                </text>
+                            </g>
+                            <g>
+                                <text text-anchor="end" x="485.8" y="669.8497422611929" font-family="Arial"
+                                      font-size="16" transform="rotate(-30 485.8 669.8497422611929)" stroke="none"
+                                      stroke-width="0" fill="#222222">29 January 2025
+                                </text>
+                            </g>
+                            <g>
+                                <text text-anchor="end" x="524.8" y="669.8497422611929" font-family="Arial"
+                                      font-size="16" transform="rotate(-30 524.8 669.8497422611929)" stroke="none"
+                                      stroke-width="0" fill="#222222">03 February 2025
+                                </text>
+                            </g>
+                            <g>
+                                <text text-anchor="end" x="563.8" y="669.8497422611929" font-family="Arial"
+                                      font-size="16" transform="rotate(-30 563.8 669.8497422611929)" stroke="none"
+                                      stroke-width="0" fill="#222222">05 February 2025
+                                </text>
+                            </g>
+                            <g>
+                                <text text-anchor="end" x="602.8" y="669.8497422611929" font-family="Arial"
+                                      font-size="16" transform="rotate(-30 602.8 669.8497422611929)" stroke="none"
+                                      stroke-width="0" fill="#222222">12 February 2025
+                                </text>
+                            </g>
+                            <g>
+                                <text text-anchor="end" x="641.8" y="669.8497422611929" font-family="Arial"
+                                      font-size="16" transform="rotate(-30 641.8 669.8497422611929)" stroke="none"
+                                      stroke-width="0" fill="#222222">17 February 2025
+                                </text>
+                            </g>
+                            <g>
+                                <text text-anchor="end" x="680.8" y="669.8497422611929" font-family="Arial"
+                                      font-size="16" transform="rotate(-30 680.8 669.8497422611929)" stroke="none"
+                                      stroke-width="0" fill="#222222">26 February 2025
+                                </text>
+                            </g>
+                            <g>
+                                <text text-anchor="end" x="719.8" y="669.8497422611929" font-family="Arial"
+                                      font-size="16" transform="rotate(-30 719.8 669.8497422611929)" stroke="none"
+                                      stroke-width="0" fill="#222222">05 March 2025
+                                </text>
+                            </g>
+                            <g>
+                                <text text-anchor="end" x="758.8" y="669.8497422611929" font-family="Arial"
+                                      font-size="16" transform="rotate(-30 758.8 669.8497422611929)" stroke="none"
+                                      stroke-width="0" fill="#222222">12 March 2025
+                                </text>
+                            </g>
+                            <g>
+                                <text text-anchor="end" x="797.8" y="669.8497422611929" font-family="Arial"
+                                      font-size="16" transform="rotate(-30 797.8 669.8497422611929)" stroke="none"
+                                      stroke-width="0" fill="#222222">14 March 2025
+                                </text>
+                            </g>
+                            <g>
+                                <text text-anchor="end" x="836.8" y="669.8497422611929" font-family="Arial"
+                                      font-size="16" transform="rotate(-30 836.8 669.8497422611929)" stroke="none"
+                                      stroke-width="0" fill="#222222">17 March 2025
+                                </text>
+                            </g>
+                            <g>
+                                <text text-anchor="end" x="875.8" y="669.8497422611929" font-family="Arial"
+                                      font-size="16" transform="rotate(-30 875.8 669.8497422611929)" stroke="none"
+                                      stroke-width="0" fill="#222222">19 March 2025
+                                </text>
+                            </g>
+                            <g>
+                                <text text-anchor="end" x="914.8" y="669.8497422611929" font-family="Arial"
+                                      font-size="16" transform="rotate(-30 914.8 669.8497422611929)" stroke="none"
+                                      stroke-width="0" fill="#222222">24 March 2025
+                                </text>
+                            </g>
+                            <g>
+                                <text text-anchor="end" x="953.8" y="669.8497422611929" font-family="Arial"
+                                      font-size="16" transform="rotate(-30 953.8 669.8497422611929)" stroke="none"
+                                      stroke-width="0" fill="#222222">26 March 2025
+                                </text>
+                            </g>
+                            <g>
+                                <text text-anchor="end" x="213" y="652.1" font-family="Arial" font-size="16"
+                                      stroke="none" stroke-width="0" fill="#444444">-500
+                                </text>
+                            </g>
+                            <g>
+                                <text text-anchor="end" x="213" y="607.2818" font-family="Arial" font-size="16"
+                                      stroke="none" stroke-width="0" fill="#444444">-400
+                                </text>
+                            </g>
+                            <g>
+                                <text text-anchor="end" x="213" y="562.4636" font-family="Arial" font-size="16"
+                                      stroke="none" stroke-width="0" fill="#444444">-300
+                                </text>
+                            </g>
+                            <g>
+                                <text text-anchor="end" x="213" y="517.6455" font-family="Arial" font-size="16"
+                                      stroke="none" stroke-width="0" fill="#444444">-200
+                                </text>
+                            </g>
+                            <g>
+                                <text text-anchor="end" x="213" y="472.82730000000004" font-family="Arial"
+                                      font-size="16" stroke="none" stroke-width="0" fill="#444444">-100
+                                </text>
+                            </g>
+                            <g>
+                                <text text-anchor="end" x="213" y="428.00910000000005" font-family="Arial"
+                                      font-size="16" stroke="none" stroke-width="0" fill="#444444">0
+                                </text>
+                            </g>
+                            <g>
+                                <text text-anchor="end" x="213" y="383.1909" font-family="Arial" font-size="16"
+                                      stroke="none" stroke-width="0" fill="#444444">100
+                                </text>
+                            </g>
+                            <g>
+                                <text text-anchor="end" x="213" y="338.3727" font-family="Arial" font-size="16"
+                                      stroke="none" stroke-width="0" fill="#444444">200
+                                </text>
+                            </g>
+                            <g>
+                                <text text-anchor="end" x="213" y="293.5545" font-family="Arial" font-size="16"
+                                      stroke="none" stroke-width="0" fill="#444444">300
+                                </text>
+                            </g>
+                            <g>
+                                <text text-anchor="end" x="213" y="248.7364" font-family="Arial" font-size="16"
+                                      stroke="none" stroke-width="0" fill="#444444">400
+                                </text>
+                            </g>
+                            <g>
+                                <text text-anchor="end" x="213" y="203.91819999999998" font-family="Arial"
+                                      font-size="16" stroke="none" stroke-width="0" fill="#444444">500
+                                </text>
+                            </g>
+                            <g>
+                                <text text-anchor="end" x="213" y="159.1" font-family="Arial" font-size="16"
+                                      stroke="none" stroke-width="0" fill="#444444">600
+                                </text>
+                            </g>
+                        </g>
+                    </g>
+                    <g></g>
+                </svg>
+                <div aria-label="A tabular representation of the data in the chart."
+                     style="position: absolute; left: -10000px; top: auto; width: 1px; height: 1px; overflow: hidden;">
+                    <table>
+                        <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>alkis</th>
+                            <th>fedza</th>
+                            <th>george</th>
+                            <th>kostas</th>
+                            <th>koszorg</th>
+                            <th>koulouris</th>
+                            <th>moirotsos</th>
+                            <th>tasos</th>
+                            <th>tsili</th>
+                            <th>zak</th>
+                            <th>coulou</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>02 January 2025</td>
+                            <td>10</td>
+                            <td>70</td>
+                            <td>35</td>
+                            <td>60</td>
+                            <td>50</td>
+                            <td>-85</td>
+                            <td>-35</td>
+                            <td>-60</td>
+                            <td>5</td>
+                            <td>-50</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>08 January 2025</td>
+                            <td>-30</td>
+                            <td>-10</td>
+                            <td>15</td>
+                            <td>30</td>
+                            <td>85</td>
+                            <td>-110</td>
+                            <td>0</td>
+                            <td>-25</td>
+                            <td>95</td>
+                            <td>-50</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>16 January 2025</td>
+                            <td>-35</td>
+                            <td>-75</td>
+                            <td>15</td>
+                            <td>105</td>
+                            <td>85</td>
+                            <td>-180</td>
+                            <td>-25</td>
+                            <td>-65</td>
+                            <td>185</td>
+                            <td>-50</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>22 January 2025</td>
+                            <td>-95</td>
+                            <td>-75</td>
+                            <td>15</td>
+                            <td>115</td>
+                            <td>90</td>
+                            <td>-260</td>
+                            <td>0</td>
+                            <td>-65</td>
+                            <td>295</td>
+                            <td>-50</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>24 January 2025</td>
+                            <td>-105</td>
+                            <td>-75</td>
+                            <td>-40</td>
+                            <td>145</td>
+                            <td>55</td>
+                            <td>-260</td>
+                            <td>55</td>
+                            <td>-50</td>
+                            <td>295</td>
+                            <td>-50</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>25 January 2025</td>
+                            <td>-85</td>
+                            <td>-75</td>
+                            <td>-5</td>
+                            <td>165</td>
+                            <td>30</td>
+                            <td>-305</td>
+                            <td>50</td>
+                            <td>-50</td>
+                            <td>295</td>
+                            <td>-50</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>29 January 2025</td>
+                            <td>-145</td>
+                            <td>-75</td>
+                            <td>-55</td>
+                            <td>185</td>
+                            <td>-15</td>
+                            <td>-335</td>
+                            <td>160</td>
+                            <td>35</td>
+                            <td>305</td>
+                            <td>-50</td>
+                            <td>-40</td>
+                        </tr>
+                        <tr>
+                            <td>03 February 2025</td>
+                            <td>-95</td>
+                            <td>-95</td>
+                            <td>-35</td>
+                            <td>125</td>
+                            <td>10</td>
+                            <td>-380</td>
+                            <td>190</td>
+                            <td>35</td>
+                            <td>305</td>
+                            <td>-50</td>
+                            <td>-40</td>
+                        </tr>
+                        <tr>
+                            <td>05 February 2025</td>
+                            <td>-20</td>
+                            <td>-95</td>
+                            <td>-25</td>
+                            <td>125</td>
+                            <td>10</td>
+                            <td>-360</td>
+                            <td>160</td>
+                            <td>-40</td>
+                            <td>285</td>
+                            <td>-50</td>
+                            <td>-40</td>
+                        </tr>
+                        <tr>
+                            <td>12 February 2025</td>
+                            <td>-30</td>
+                            <td>-175</td>
+                            <td>-25</td>
+                            <td>170</td>
+                            <td>-30</td>
+                            <td>-400</td>
+                            <td>250</td>
+                            <td>-130</td>
+                            <td>410</td>
+                            <td>-50</td>
+                            <td>-40</td>
+                        </tr>
+                        <tr>
+                            <td>17 February 2025</td>
+                            <td>-10</td>
+                            <td>-175</td>
+                            <td>5</td>
+                            <td>195</td>
+                            <td>0</td>
+                            <td>-365</td>
+                            <td>110</td>
+                            <td>-130</td>
+                            <td>410</td>
+                            <td>-50</td>
+                            <td>-40</td>
+                        </tr>
+                        <tr>
+                            <td>26 February 2025</td>
+                            <td>-5</td>
+                            <td>-175</td>
+                            <td>-65</td>
+                            <td>150</td>
+                            <td>70</td>
+                            <td>-355</td>
+                            <td>110</td>
+                            <td>-145</td>
+                            <td>450</td>
+                            <td>-50</td>
+                            <td>-35</td>
+                        </tr>
+                        <tr>
+                            <td>05 March 2025</td>
+                            <td>40</td>
+                            <td>-175</td>
+                            <td>-195</td>
+                            <td>120</td>
+                            <td>115</td>
+                            <td>-280</td>
+                            <td>75</td>
+                            <td>-145</td>
+                            <td>460</td>
+                            <td>-50</td>
+                            <td>-35</td>
+                        </tr>
+                        <tr>
+                            <td>12 March 2025</td>
+                            <td>40</td>
+                            <td>-155</td>
+                            <td>-195</td>
+                            <td>125</td>
+                            <td>110</td>
+                            <td>-320</td>
+                            <td>75</td>
+                            <td>-145</td>
+                            <td>480</td>
+                            <td>-50</td>
+                            <td>-35</td>
+                        </tr>
+                        <tr>
+                            <td>14 March 2025</td>
+                            <td>20</td>
+                            <td>-155</td>
+                            <td>-195</td>
+                            <td>95</td>
+                            <td>145</td>
+                            <td>-300</td>
+                            <td>25</td>
+                            <td>-145</td>
+                            <td>495</td>
+                            <td>-50</td>
+                            <td>-35</td>
+                        </tr>
+                        <tr>
+                            <td>17 March 2025</td>
+                            <td>75</td>
+                            <td>-200</td>
+                            <td>-195</td>
+                            <td>145</td>
+                            <td>250</td>
+                            <td>-380</td>
+                            <td>-5</td>
+                            <td>-145</td>
+                            <td>495</td>
+                            <td>-50</td>
+                            <td>-90</td>
+                        </tr>
+                        <tr>
+                            <td>19 March 2025</td>
+                            <td>115</td>
+                            <td>-200</td>
+                            <td>-155</td>
+                            <td>150</td>
+                            <td>200</td>
+                            <td>-305</td>
+                            <td>-60</td>
+                            <td>-145</td>
+                            <td>440</td>
+                            <td>-50</td>
+                            <td>-90</td>
+                        </tr>
+                        <tr>
+                            <td>24 March 2025</td>
+                            <td>195</td>
+                            <td>-200</td>
+                            <td>-125</td>
+                            <td>230</td>
+                            <td>140</td>
+                            <td>-365</td>
+                            <td>-130</td>
+                            <td>-145</td>
+                            <td>440</td>
+                            <td>-50</td>
+                            <td>-90</td>
+                        </tr>
+                        <tr>
+                            <td>26 March 2025</td>
+                            <td>255</td>
+                            <td>-215</td>
+                            <td>-200</td>
+                            <td>230</td>
+                            <td>90</td>
+                            <td>-430</td>
+                            <td>-130</td>
+                            <td>-145</td>
+                            <td>550</td>
+                            <td>-50</td>
+                            <td>-35</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div style="display: none; position: absolute; top: 810px; left: 1210px; white-space: nowrap; font-family: Arial; font-size: 16px;"
+             aria-hidden="true">coulou
+        </div>
+        <div></div>
+    </div>
+</div>
+
+<hr>
+<table id="poker_session" class="display" style="width: 60%">
+    <caption></caption>
+    <thead>
+    <tr>
+        <th>player</th>
+        <th>cash in</th>
+        <th>cash out</th>
+        <th>total</th>
+    </tr>
+    </thead>
+</table>
+<br><br><br>
+<table id="poker_session_0" class="display dataTable no-footer" style="width: 60%;"
+       aria-describedby="poker_session_0_info">
+    <caption>19) 26 March 2025 at alkis</caption>
+    <thead>
+    <tr>
+        <th class="sorting sorting_asc" tabindex="0" aria-controls="poker_session_0" rowspan="1" colspan="1"
+            style="width: 0px;" aria-sort="ascending" aria-label="player: activate to sort column descending">player
+        </th>
+        <th class="sorting" tabindex="0" aria-controls="poker_session_0" rowspan="1" colspan="1" style="width: 0px;"
+            aria-label="cash in: activate to sort column ascending">cash in
+        </th>
+        <th class="sorting" tabindex="0" aria-controls="poker_session_0" rowspan="1" colspan="1" style="width: 0px;"
+            aria-label="cash out: activate to sort column ascending">cash out
+        </th>
+        <th class="sorting" tabindex="0" aria-controls="poker_session_0" rowspan="1" colspan="1" style="width: 0px;"
+            aria-label="total: activate to sort column ascending">total
+        </th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr class="odd">
+        <td class="sorting_1">alkis</td>
+        <td>40</td>
+        <td>100</td>
+        <td>60</td>
+    </tr>
+    <tr class="even">
+        <td class="sorting_1">coulou</td>
+        <td>20</td>
+        <td>75</td>
+        <td>55</td>
+    </tr>
+    <tr class="odd">
+        <td class="sorting_1">fedza</td>
+        <td>80</td>
+        <td>65</td>
+        <td>-15</td>
+    </tr>
+    <tr class="even">
+        <td class="sorting_1">george</td>
+        <td>120</td>
+        <td>45</td>
+        <td>-75</td>
+    </tr>
+    <tr class="odd">
+        <td class="sorting_1">koszorg</td>
+        <td>50</td>
+        <td>0</td>
+        <td>-50</td>
+    </tr>
+    <tr class="even">
+        <td class="sorting_1">koulouris</td>
+        <td>65</td>
+        <td>0</td>
+        <td>-65</td>
+    </tr>
+    <tr class="odd">
+        <td class="sorting_1">tsili</td>
+        <td>20</td>
+        <td>130</td>
+        <td>110</td>
+    </tr>
+    <tr class="even">
+        <td class="sorting_1">|_ total _|</td>
+        <td>395</td>
+        <td>415</td>
+        <td>20</td>
+    </tr>
+    </tbody>
+</table>
+<br><br><br>
+<table id="poker_session_1" class="display dataTable no-footer" style="width: 60%;"
+       aria-describedby="poker_session_1_info">
+    <caption>18) 24 March 2025 at alkis</caption>
+    <thead>
+    <tr>
+        <th class="sorting sorting_asc" tabindex="0" aria-controls="poker_session_1" rowspan="1" colspan="1"
+            style="width: 0px;" aria-sort="ascending" aria-label="player: activate to sort column descending">player
+        </th>
+        <th class="sorting" tabindex="0" aria-controls="poker_session_1" rowspan="1" colspan="1" style="width: 0px;"
+            aria-label="cash in: activate to sort column ascending">cash in
+        </th>
+        <th class="sorting" tabindex="0" aria-controls="poker_session_1" rowspan="1" colspan="1" style="width: 0px;"
+            aria-label="cash out: activate to sort column ascending">cash out
+        </th>
+        <th class="sorting" tabindex="0" aria-controls="poker_session_1" rowspan="1" colspan="1" style="width: 0px;"
+            aria-label="total: activate to sort column ascending">total
+        </th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr class="odd">
+        <td class="sorting_1">alkis</td>
+        <td>20</td>
+        <td>100</td>
+        <td>80</td>
+    </tr>
+    <tr class="even">
+        <td class="sorting_1">george</td>
+        <td>20</td>
+        <td>50</td>
+        <td>30</td>
+    </tr>
+    <tr class="odd">
+        <td class="sorting_1">kostas</td>
+        <td>20</td>
+        <td>100</td>
+        <td>80</td>
+    </tr>
+    <tr class="even">
+        <td class="sorting_1">koszorg</td>
+        <td>120</td>
+        <td>60</td>
+        <td>-60</td>
+    </tr>
+    <tr class="odd">
+        <td class="sorting_1">koulouris</td>
+        <td>100</td>
+        <td>40</td>
+        <td>-60</td>
+    </tr>
+    <tr class="even">
+        <td class="sorting_1">moirotsos</td>
+        <td>130</td>
+        <td>60</td>
+        <td>-70</td>
+    </tr>
+    <tr class="odd">
+        <td class="sorting_1">|_ total _|</td>
+        <td>410</td>
+        <td>410</td>
+        <td>0</td>
+    </tr>
+    </tbody>
+</table>
+<br><br><br>
+<table id="poker_session_2" class="display dataTable no-footer" style="width: 60%;"
+       aria-describedby="poker_session_2_info">
+    <caption>17) 19 March 2025 at alkis</caption>
+    <thead>
+    <tr>
+        <th class="sorting sorting_asc" tabindex="0" aria-controls="poker_session_2" rowspan="1" colspan="1"
+            style="width: 0px;" aria-sort="ascending" aria-label="player: activate to sort column descending">player
+        </th>
+        <th class="sorting" tabindex="0" aria-controls="poker_session_2" rowspan="1" colspan="1" style="width: 0px;"
+            aria-label="cash in: activate to sort column ascending">cash in
+        </th>
+        <th class="sorting" tabindex="0" aria-controls="poker_session_2" rowspan="1" colspan="1" style="width: 0px;"
+            aria-label="cash out: activate to sort column ascending">cash out
+        </th>
+        <th class="sorting" tabindex="0" aria-controls="poker_session_2" rowspan="1" colspan="1" style="width: 0px;"
+            aria-label="total: activate to sort column ascending">total
+        </th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr class="odd">
+        <td class="sorting_1">alkis</td>
+        <td>40</td>
+        <td>80</td>
+        <td>40</td>
+    </tr>
+    <tr class="even">
+        <td class="sorting_1">george</td>
+        <td>70</td>
+        <td>110</td>
+        <td>40</td>
+    </tr>
+    <tr class="odd">
+        <td class="sorting_1">kostas</td>
+        <td>70</td>
+        <td>75</td>
+        <td>5</td>
+    </tr>
+    <tr class="even">
+        <td class="sorting_1">koszorg</td>
+        <td>50</td>
+        <td>0</td>
+        <td>-50</td>
+    </tr>
+    <tr class="odd">
+        <td class="sorting_1">koulouris</td>
+        <td>25</td>
+        <td>100</td>
+        <td>75</td>
+    </tr>
+    <tr class="even">
+        <td class="sorting_1">moirotsos</td>
+        <td>180</td>
+        <td>125</td>
+        <td>-55</td>
+    </tr>
+    <tr class="odd">
+        <td class="sorting_1">tsili</td>
+        <td>100</td>
+        <td>45</td>
+        <td>-55</td>
+    </tr>
+    <tr class="even">
+        <td class="sorting_1">|_ total _|</td>
+        <td>535</td>
+        <td>535</td>
+        <td>0</td>
+    </tr>
+    </tbody>
+</table>
+<br><br><br>
+<table id="poker_session_3" class="display dataTable no-footer" style="width: 60%;"
+       aria-describedby="poker_session_3_info">
+    <caption>16) 17 March 2025 at alkis</caption>
+    <thead>
+    <tr>
+        <th class="sorting sorting_asc" tabindex="0" aria-controls="poker_session_3" rowspan="1" colspan="1"
+            style="width: 0px;" aria-sort="ascending" aria-label="player: activate to sort column descending">player
+        </th>
+        <th class="sorting" tabindex="0" aria-controls="poker_session_3" rowspan="1" colspan="1" style="width: 0px;"
+            aria-label="cash in: activate to sort column ascending">cash in
+        </th>
+        <th class="sorting" tabindex="0" aria-controls="poker_session_3" rowspan="1" colspan="1" style="width: 0px;"
+            aria-label="cash out: activate to sort column ascending">cash out
+        </th>
+        <th class="sorting" tabindex="0" aria-controls="poker_session_3" rowspan="1" colspan="1" style="width: 0px;"
+            aria-label="total: activate to sort column ascending">total
+        </th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr class="odd">
+        <td class="sorting_1">alkis</td>
+        <td>40</td>
+        <td>95</td>
+        <td>55</td>
+    </tr>
+    <tr class="even">
+        <td class="sorting_1">coulou</td>
+        <td>55</td>
+        <td>0</td>
+        <td>-55</td>
+    </tr>
+    <tr class="odd">
+        <td class="sorting_1">fedza</td>
+        <td>60</td>
+        <td>15</td>
+        <td>-45</td>
+    </tr>
+    <tr class="even">
+        <td class="sorting_1">kostas</td>
+        <td>20</td>
+        <td>70</td>
+        <td>50</td>
+    </tr>
+    <tr class="odd">
+        <td class="sorting_1">koszorg</td>
+        <td>20</td>
+        <td>125</td>
+        <td>105</td>
+    </tr>
+    <tr class="even">
+        <td class="sorting_1">koulouris</td>
+        <td>80</td>
+        <td>0</td>
+        <td>-80</td>
+    </tr>
+    <tr class="odd">
+        <td class="sorting_1">moirotsos</td>
+        <td>100</td>
+        <td>70</td>
+        <td>-30</td>
+    </tr>
+    <tr class="even">
+        <td class="sorting_1">|_ total _|</td>
+        <td>375</td>
+        <td>375</td>
+        <td>0</td>
+    </tr>
+    </tbody>
+</table>
+<br><br><br>
+<table id="poker_session_4" class="display dataTable no-footer" style="width: 60%;"
+       aria-describedby="poker_session_4_info">
+    <caption>15) 14 March 2025 at moirotsos (karagiannis:20:40)</caption>
+    <thead>
+    <tr>
+        <th class="sorting sorting_asc" tabindex="0" aria-controls="poker_session_4" rowspan="1" colspan="1"
+            style="width: 0px;" aria-sort="ascending" aria-label="player: activate to sort column descending">player
+        </th>
+        <th class="sorting" tabindex="0" aria-controls="poker_session_4" rowspan="1" colspan="1" style="width: 0px;"
+            aria-label="cash in: activate to sort column ascending">cash in
+        </th>
+        <th class="sorting" tabindex="0" aria-controls="poker_session_4" rowspan="1" colspan="1" style="width: 0px;"
+            aria-label="cash out: activate to sort column ascending">cash out
+        </th>
+        <th class="sorting" tabindex="0" aria-controls="poker_session_4" rowspan="1" colspan="1" style="width: 0px;"
+            aria-label="total: activate to sort column ascending">total
+        </th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr class="odd">
+        <td class="sorting_1">alkis</td>
+        <td>40</td>
+        <td>20</td>
+        <td>-20</td>
+    </tr>
+    <tr class="even">
+        <td class="sorting_1">kostas</td>
+        <td>70</td>
+        <td>40</td>
+        <td>-30</td>
+    </tr>
+    <tr class="odd">
+        <td class="sorting_1">koszorg</td>
+        <td>40</td>
+        <td>75</td>
+        <td>35</td>
+    </tr>
+    <tr class="even">
+        <td class="sorting_1">koulouris</td>
+        <td>20</td>
+        <td>40</td>
+        <td>20</td>
+    </tr>
+    <tr class="odd">
+        <td class="sorting_1">moirotsos</td>
+        <td>100</td>
+        <td>50</td>
+        <td>-50</td>
+    </tr>
+    <tr class="even">
+        <td class="sorting_1">tsili</td>
+        <td>40</td>
+        <td>55</td>
+        <td>15</td>
+    </tr>
+    <tr class="odd">
+        <td class="sorting_1">|_ total _|</td>
+        <td>310</td>
+        <td>280</td>
+        <td>-30</td>
+    </tr>
+    </tbody>
+</table>
+<br><br><br>
+<table id="poker_session_5" class="display dataTable no-footer" style="width: 60%;"
+       aria-describedby="poker_session_5_info">
+    <caption>14) 12 March 2025 at alkis</caption>
+    <thead>
+    <tr>
+        <th class="sorting sorting_asc" tabindex="0" aria-controls="poker_session_5" rowspan="1" colspan="1"
+            style="width: 0px;" aria-sort="ascending" aria-label="player: activate to sort column descending">player
+        </th>
+        <th class="sorting" tabindex="0" aria-controls="poker_session_5" rowspan="1" colspan="1" style="width: 0px;"
+            aria-label="cash in: activate to sort column ascending">cash in
+        </th>
+        <th class="sorting" tabindex="0" aria-controls="poker_session_5" rowspan="1" colspan="1" style="width: 0px;"
+            aria-label="cash out: activate to sort column ascending">cash out
+        </th>
+        <th class="sorting" tabindex="0" aria-controls="poker_session_5" rowspan="1" colspan="1" style="width: 0px;"
+            aria-label="total: activate to sort column ascending">total
+        </th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr class="odd">
+        <td class="sorting_1">alkis</td>
+        <td>20</td>
+        <td>20</td>
+        <td>0</td>
+    </tr>
+    <tr class="even">
+        <td class="sorting_1">fedza</td>
+        <td>60</td>
+        <td>80</td>
+        <td>20</td>
+    </tr>
+    <tr class="odd">
+        <td class="sorting_1">kostas</td>
+        <td>40</td>
+        <td>45</td>
+        <td>5</td>
+    </tr>
+    <tr class="even">
+        <td class="sorting_1">koszorg</td>
+        <td>40</td>
+        <td>35</td>
+        <td>-5</td>
+    </tr>
+    <tr class="odd">
+        <td class="sorting_1">koulouris</td>
+        <td>50</td>
+        <td>10</td>
+        <td>-40</td>
+    </tr>
+    <tr class="even">
+        <td class="sorting_1">tsili</td>
+        <td>20</td>
+        <td>40</td>
+        <td>20</td>
+    </tr>
+    <tr class="odd">
+        <td class="sorting_1">|_ total _|</td>
+        <td>230</td>
+        <td>230</td>
+        <td>0</td>
+    </tr>
+    </tbody>
+</table>
+<br><br><br>
+<table id="poker_session_6" class="display dataTable no-footer" style="width: 60%;"
+       aria-describedby="poker_session_6_info">
+    <caption>13) 05 March 2025 at alkis</caption>
+    <thead>
+    <tr>
+        <th class="sorting sorting_asc" tabindex="0" aria-controls="poker_session_6" rowspan="1" colspan="1"
+            style="width: 0px;" aria-sort="ascending" aria-label="player: activate to sort column descending">player
+        </th>
+        <th class="sorting" tabindex="0" aria-controls="poker_session_6" rowspan="1" colspan="1" style="width: 0px;"
+            aria-label="cash in: activate to sort column ascending">cash in
+        </th>
+        <th class="sorting" tabindex="0" aria-controls="poker_session_6" rowspan="1" colspan="1" style="width: 0px;"
+            aria-label="cash out: activate to sort column ascending">cash out
+        </th>
+        <th class="sorting" tabindex="0" aria-controls="poker_session_6" rowspan="1" colspan="1" style="width: 0px;"
+            aria-label="total: activate to sort column ascending">total
+        </th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr class="odd">
+        <td class="sorting_1">alkis</td>
+        <td>20</td>
+        <td>65</td>
+        <td>45</td>
+    </tr>
+    <tr class="even">
+        <td class="sorting_1">fedza</td>
+        <td>60</td>
+        <td>60</td>
+        <td>0</td>
+    </tr>
+    <tr class="odd">
+        <td class="sorting_1">george</td>
+        <td>130</td>
+        <td>0</td>
+        <td>-130</td>
+    </tr>
+    <tr class="even">
+        <td class="sorting_1">kostas</td>
+        <td>70</td>
+        <td>40</td>
+        <td>-30</td>
+    </tr>
+    <tr class="odd">
+        <td class="sorting_1">koszorg</td>
+        <td>20</td>
+        <td>65</td>
+        <td>45</td>
+    </tr>
+    <tr class="even">
+        <td class="sorting_1">koulouris</td>
+        <td>90</td>
+        <td>165</td>
+        <td>75</td>
+    </tr>
+    <tr class="odd">
+        <td class="sorting_1">moirotsos</td>
+        <td>60</td>
+        <td>25</td>
+        <td>-35</td>
+    </tr>
+    <tr class="even">
+        <td class="sorting_1">tsili</td>
+        <td>20</td>
+        <td>30</td>
+        <td>10</td>
+    </tr>
+    <tr class="odd">
+        <td class="sorting_1">|_ total _|</td>
+        <td>470</td>
+        <td>450</td>
+        <td>-20</td>
+    </tr>
+    </tbody>
+</table>
+<br><br><br>
+<table id="poker_session_7" class="display dataTable no-footer" style="width: 60%;"
+       aria-describedby="poker_session_7_info">
+    <caption>12) 26 February 2025 at alkis</caption>
+    <thead>
+    <tr>
+        <th class="sorting sorting_asc" tabindex="0" aria-controls="poker_session_7" rowspan="1" colspan="1"
+            style="width: 0px;" aria-sort="ascending" aria-label="player: activate to sort column descending">player
+        </th>
+        <th class="sorting" tabindex="0" aria-controls="poker_session_7" rowspan="1" colspan="1" style="width: 0px;"
+            aria-label="cash in: activate to sort column ascending">cash in
+        </th>
+        <th class="sorting" tabindex="0" aria-controls="poker_session_7" rowspan="1" colspan="1" style="width: 0px;"
+            aria-label="cash out: activate to sort column ascending">cash out
+        </th>
+        <th class="sorting" tabindex="0" aria-controls="poker_session_7" rowspan="1" colspan="1" style="width: 0px;"
+            aria-label="total: activate to sort column ascending">total
+        </th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr class="odd">
+        <td class="sorting_1">alkis</td>
+        <td>60</td>
+        <td>65</td>
+        <td>5</td>
+    </tr>
+    <tr class="even">
+        <td class="sorting_1">coulou</td>
+        <td>25</td>
+        <td>30</td>
+        <td>5</td>
+    </tr>
+    <tr class="odd">
+        <td class="sorting_1">george</td>
+        <td>70</td>
+        <td>0</td>
+        <td>-70</td>
+    </tr>
+    <tr class="even">
+        <td class="sorting_1">kostas</td>
+        <td>60</td>
+        <td>15</td>
+        <td>-45</td>
+    </tr>
+    <tr class="odd">
+        <td class="sorting_1">koszorg</td>
+        <td>25</td>
+        <td>95</td>
+        <td>70</td>
+    </tr>
+    <tr class="even">
+        <td class="sorting_1">koulouris</td>
+        <td>45</td>
+        <td>55</td>
+        <td>10</td>
+    </tr>
+    <tr class="odd">
+        <td class="sorting_1">tasos</td>
+        <td>40</td>
+        <td>25</td>
+        <td>-15</td>
+    </tr>
+    <tr class="even">
+        <td class="sorting_1">tsili</td>
+        <td>20</td>
+        <td>60</td>
+        <td>40</td>
+    </tr>
+    <tr class="odd">
+        <td class="sorting_1">|_ total _|</td>
+        <td>345</td>
+        <td>345</td>
+        <td>0</td>
+    </tr>
+    </tbody>
+</table>
+<br><br><br>
+<table id="poker_session_8" class="display dataTable no-footer" style="width: 60%;"
+       aria-describedby="poker_session_8_info">
+    <caption>11) 17 February 2025 at alkis</caption>
+    <thead>
+    <tr>
+        <th class="sorting sorting_asc" tabindex="0" aria-controls="poker_session_8" rowspan="1" colspan="1"
+            style="width: 0px;" aria-sort="ascending" aria-label="player: activate to sort column descending">player
+        </th>
+        <th class="sorting" tabindex="0" aria-controls="poker_session_8" rowspan="1" colspan="1" style="width: 0px;"
+            aria-label="cash in: activate to sort column ascending">cash in
+        </th>
+        <th class="sorting" tabindex="0" aria-controls="poker_session_8" rowspan="1" colspan="1" style="width: 0px;"
+            aria-label="cash out: activate to sort column ascending">cash out
+        </th>
+        <th class="sorting" tabindex="0" aria-controls="poker_session_8" rowspan="1" colspan="1" style="width: 0px;"
+            aria-label="total: activate to sort column ascending">total
+        </th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr class="odd">
+        <td class="sorting_1">alkis</td>
+        <td>40</td>
+        <td>60</td>
+        <td>20</td>
+    </tr>
+    <tr class="even">
+        <td class="sorting_1">george</td>
+        <td>20</td>
+        <td>50</td>
+        <td>30</td>
+    </tr>
+    <tr class="odd">
+        <td class="sorting_1">kostas</td>
+        <td>20</td>
+        <td>45</td>
+        <td>25</td>
+    </tr>
+    <tr class="even">
+        <td class="sorting_1">koszorg</td>
+        <td>20</td>
+        <td>50</td>
+        <td>30</td>
+    </tr>
+    <tr class="odd">
+        <td class="sorting_1">koulouris</td>
+        <td>40</td>
+        <td>75</td>
+        <td>35</td>
+    </tr>
+    <tr class="even">
+        <td class="sorting_1">moirotsos</td>
+        <td>140</td>
+        <td>0</td>
+        <td>-140</td>
+    </tr>
+    <tr class="odd">
+        <td class="sorting_1">|_ total _|</td>
+        <td>280</td>
+        <td>280</td>
+        <td>0</td>
+    </tr>
+    </tbody>
+</table>
+<br><br><br>
+<table id="poker_session_9" class="display dataTable no-footer" style="width: 60%;"
+       aria-describedby="poker_session_9_info">
+    <caption>10) 12 February 2025 at alkis</caption>
+    <thead>
+    <tr>
+        <th class="sorting sorting_asc" tabindex="0" aria-controls="poker_session_9" rowspan="1" colspan="1"
+            style="width: 0px;" aria-sort="ascending" aria-label="player: activate to sort column descending">player
+        </th>
+        <th class="sorting" tabindex="0" aria-controls="poker_session_9" rowspan="1" colspan="1" style="width: 0px;"
+            aria-label="cash in: activate to sort column ascending">cash in
+        </th>
+        <th class="sorting" tabindex="0" aria-controls="poker_session_9" rowspan="1" colspan="1" style="width: 0px;"
+            aria-label="cash out: activate to sort column ascending">cash out
+        </th>
+        <th class="sorting" tabindex="0" aria-controls="poker_session_9" rowspan="1" colspan="1" style="width: 0px;"
+            aria-label="total: activate to sort column ascending">total
+        </th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr class="odd">
+        <td class="sorting_1">alkis</td>
+        <td>60</td>
+        <td>50</td>
+        <td>-10</td>
+    </tr>
+    <tr class="even">
+        <td class="sorting_1">fedza</td>
+        <td>140</td>
+        <td>60</td>
+        <td>-80</td>
+    </tr>
+    <tr class="odd">
+        <td class="sorting_1">kostas</td>
+        <td>20</td>
+        <td>65</td>
+        <td>45</td>
+    </tr>
+    <tr class="even">
+        <td class="sorting_1">koszorg</td>
+        <td>40</td>
+        <td>0</td>
+        <td>-40</td>
+    </tr>
+    <tr class="odd">
+        <td class="sorting_1">koulouris</td>
+        <td>40</td>
+        <td>0</td>
+        <td>-40</td>
+    </tr>
+    <tr class="even">
+        <td class="sorting_1">moirotsos</td>
+        <td>40</td>
+        <td>130</td>
+        <td>90</td>
+    </tr>
+    <tr class="odd">
+        <td class="sorting_1">tasos</td>
+        <td>90</td>
+        <td>0</td>
+        <td>-90</td>
+    </tr>
+    <tr class="even">
+        <td class="sorting_1">tsili</td>
+        <td>40</td>
+        <td>165</td>
+        <td>125</td>
+    </tr>
+    <tr class="odd">
+        <td class="sorting_1">|_ total _|</td>
+        <td>470</td>
+        <td>470</td>
+        <td>0</td>
+    </tr>
+    </tbody>
+</table>
+<br><br><br>
+<table id="poker_session_10" class="display dataTable no-footer" style="width: 60%;"
+       aria-describedby="poker_session_10_info">
+    <caption>9) 05 February 2025 at alkis (karagiannis:20:40)</caption>
+    <thead>
+    <tr>
+        <th class="sorting sorting_asc" tabindex="0" aria-controls="poker_session_10" rowspan="1" colspan="1"
+            style="width: 0px;" aria-sort="ascending" aria-label="player: activate to sort column descending">player
+        </th>
+        <th class="sorting" tabindex="0" aria-controls="poker_session_10" rowspan="1" colspan="1" style="width: 0px;"
+            aria-label="cash in: activate to sort column ascending">cash in
+        </th>
+        <th class="sorting" tabindex="0" aria-controls="poker_session_10" rowspan="1" colspan="1" style="width: 0px;"
+            aria-label="cash out: activate to sort column ascending">cash out
+        </th>
+        <th class="sorting" tabindex="0" aria-controls="poker_session_10" rowspan="1" colspan="1" style="width: 0px;"
+            aria-label="total: activate to sort column ascending">total
+        </th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr class="odd">
+        <td class="sorting_1">alkis</td>
+        <td>40</td>
+        <td>115</td>
+        <td>75</td>
+    </tr>
+    <tr class="even">
+        <td class="sorting_1">george</td>
+        <td>40</td>
+        <td>50</td>
+        <td>10</td>
+    </tr>
+    <tr class="odd">
+        <td class="sorting_1">koulouris</td>
+        <td>20</td>
+        <td>40</td>
+        <td>20</td>
+    </tr>
+    <tr class="even">
+        <td class="sorting_1">moirotsos</td>
+        <td>85</td>
+        <td>55</td>
+        <td>-30</td>
+    </tr>
+    <tr class="odd">
+        <td class="sorting_1">tasos</td>
+        <td>75</td>
+        <td>0</td>
+        <td>-75</td>
+    </tr>
+    <tr class="even">
+        <td class="sorting_1">tsili</td>
+        <td>40</td>
+        <td>20</td>
+        <td>-20</td>
+    </tr>
+    <tr class="odd">
+        <td class="sorting_1">|_ total _|</td>
+        <td>300</td>
+        <td>280</td>
+        <td>-20</td>
+    </tr>
+    </tbody>
+</table>
+<br><br><br>
+<table id="poker_session_11" class="display dataTable no-footer" style="width: 60%;"
+       aria-describedby="poker_session_11_info">
+    <caption>8) 03 February 2025 at alkis</caption>
+    <thead>
+    <tr>
+        <th class="sorting sorting_asc" tabindex="0" aria-controls="poker_session_11" rowspan="1" colspan="1"
+            style="width: 0px;" aria-sort="ascending" aria-label="player: activate to sort column descending">player
+        </th>
+        <th class="sorting" tabindex="0" aria-controls="poker_session_11" rowspan="1" colspan="1" style="width: 0px;"
+            aria-label="cash in: activate to sort column ascending">cash in
+        </th>
+        <th class="sorting" tabindex="0" aria-controls="poker_session_11" rowspan="1" colspan="1" style="width: 0px;"
+            aria-label="cash out: activate to sort column ascending">cash out
+        </th>
+        <th class="sorting" tabindex="0" aria-controls="poker_session_11" rowspan="1" colspan="1" style="width: 0px;"
+            aria-label="total: activate to sort column ascending">total
+        </th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr class="odd">
+        <td class="sorting_1">alkis</td>
+        <td>40</td>
+        <td>90</td>
+        <td>50</td>
+    </tr>
+    <tr class="even">
+        <td class="sorting_1">fedza</td>
+        <td>140</td>
+        <td>120</td>
+        <td>-20</td>
+    </tr>
+    <tr class="odd">
+        <td class="sorting_1">george</td>
+        <td>30</td>
+        <td>50</td>
+        <td>20</td>
+    </tr>
+    <tr class="even">
+        <td class="sorting_1">kostas</td>
+        <td>80</td>
+        <td>20</td>
+        <td>-60</td>
+    </tr>
+    <tr class="odd">
+        <td class="sorting_1">koszorg</td>
+        <td>25</td>
+        <td>50</td>
+        <td>25</td>
+    </tr>
+    <tr class="even">
+        <td class="sorting_1">koulouris</td>
+        <td>50</td>
+        <td>5</td>
+        <td>-45</td>
+    </tr>
+    <tr class="odd">
+        <td class="sorting_1">moirotsos</td>
+        <td>50</td>
+        <td>80</td>
+        <td>30</td>
+    </tr>
+    <tr class="even">
+        <td class="sorting_1">|_ total _|</td>
+        <td>415</td>
+        <td>415</td>
+        <td>0</td>
+    </tr>
+    </tbody>
+</table>
+<br><br><br>
+<table id="poker_session_12" class="display dataTable no-footer" style="width: 60%;"
+       aria-describedby="poker_session_12_info">
+    <caption>7) 29 January 2025 at alkis</caption>
+    <thead>
+    <tr>
+        <th class="sorting sorting_asc" tabindex="0" aria-controls="poker_session_12" rowspan="1" colspan="1"
+            style="width: 0px;" aria-sort="ascending" aria-label="player: activate to sort column descending">player
+        </th>
+        <th class="sorting" tabindex="0" aria-controls="poker_session_12" rowspan="1" colspan="1" style="width: 0px;"
+            aria-label="cash in: activate to sort column ascending">cash in
+        </th>
+        <th class="sorting" tabindex="0" aria-controls="poker_session_12" rowspan="1" colspan="1" style="width: 0px;"
+            aria-label="cash out: activate to sort column ascending">cash out
+        </th>
+        <th class="sorting" tabindex="0" aria-controls="poker_session_12" rowspan="1" colspan="1" style="width: 0px;"
+            aria-label="total: activate to sort column ascending">total
+        </th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr class="odd">
+        <td class="sorting_1">alkis</td>
+        <td>120</td>
+        <td>60</td>
+        <td>-60</td>
+    </tr>
+    <tr class="even">
+        <td class="sorting_1">coulou</td>
+        <td>40</td>
+        <td>0</td>
+        <td>-40</td>
+    </tr>
+    <tr class="odd">
+        <td class="sorting_1">george</td>
+        <td>120</td>
+        <td>70</td>
+        <td>-50</td>
+    </tr>
+    <tr class="even">
+        <td class="sorting_1">kostas</td>
+        <td>20</td>
+        <td>40</td>
+        <td>20</td>
+    </tr>
+    <tr class="odd">
+        <td class="sorting_1">koszorg</td>
+        <td>100</td>
+        <td>55</td>
+        <td>-45</td>
+    </tr>
+    <tr class="even">
+        <td class="sorting_1">koulouris</td>
+        <td>30</td>
+        <td>0</td>
+        <td>-30</td>
+    </tr>
+    <tr class="odd">
+        <td class="sorting_1">moirotsos</td>
+        <td>20</td>
+        <td>130</td>
+        <td>110</td>
+    </tr>
+    <tr class="even">
+        <td class="sorting_1">tasos</td>
+        <td>40</td>
+        <td>125</td>
+        <td>85</td>
+    </tr>
+    <tr class="odd">
+        <td class="sorting_1">tsili</td>
+        <td>40</td>
+        <td>50</td>
+        <td>10</td>
+    </tr>
+    <tr class="even">
+        <td class="sorting_1">|_ total _|</td>
+        <td>530</td>
+        <td>530</td>
+        <td>0</td>
+    </tr>
+    </tbody>
+</table>
+<br><br><br>
+<table id="poker_session_13" class="display dataTable no-footer" style="width: 60%;"
+       aria-describedby="poker_session_13_info">
+    <caption>6) 25 January 2025 at moirotsos</caption>
+    <thead>
+    <tr>
+        <th class="sorting sorting_asc" tabindex="0" aria-controls="poker_session_13" rowspan="1" colspan="1"
+            style="width: 0px;" aria-sort="ascending" aria-label="player: activate to sort column descending">player
+        </th>
+        <th class="sorting" tabindex="0" aria-controls="poker_session_13" rowspan="1" colspan="1" style="width: 0px;"
+            aria-label="cash in: activate to sort column ascending">cash in
+        </th>
+        <th class="sorting" tabindex="0" aria-controls="poker_session_13" rowspan="1" colspan="1" style="width: 0px;"
+            aria-label="cash out: activate to sort column ascending">cash out
+        </th>
+        <th class="sorting" tabindex="0" aria-controls="poker_session_13" rowspan="1" colspan="1" style="width: 0px;"
+            aria-label="total: activate to sort column ascending">total
+        </th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr class="odd">
+        <td class="sorting_1">alkis</td>
+        <td>120</td>
+        <td>140</td>
+        <td>20</td>
+    </tr>
+    <tr class="even">
+        <td class="sorting_1">george</td>
+        <td>30</td>
+        <td>65</td>
+        <td>35</td>
+    </tr>
+    <tr class="odd">
+        <td class="sorting_1">kostas</td>
+        <td>60</td>
+        <td>80</td>
+        <td>20</td>
+    </tr>
+    <tr class="even">
+        <td class="sorting_1">koszorg</td>
+        <td>50</td>
+        <td>25</td>
+        <td>-25</td>
+    </tr>
+    <tr class="odd">
+        <td class="sorting_1">koulouris</td>
+        <td>85</td>
+        <td>40</td>
+        <td>-45</td>
+    </tr>
+    <tr class="even">
+        <td class="sorting_1">moirotsos</td>
+        <td>40</td>
+        <td>35</td>
+        <td>-5</td>
+    </tr>
+    <tr class="odd">
+        <td class="sorting_1">|_ total _|</td>
+        <td>385</td>
+        <td>385</td>
+        <td>0</td>
+    </tr>
+    </tbody>
+</table>
+<br><br><br>
+<table id="poker_session_14" class="display dataTable no-footer" style="width: 60%;"
+       aria-describedby="poker_session_14_info">
+    <caption>5) 24 January 2025 at moirotsos</caption>
+    <thead>
+    <tr>
+        <th class="sorting sorting_asc" tabindex="0" aria-controls="poker_session_14" rowspan="1" colspan="1"
+            style="width: 0px;" aria-sort="ascending" aria-label="player: activate to sort column descending">player
+        </th>
+        <th class="sorting" tabindex="0" aria-controls="poker_session_14" rowspan="1" colspan="1" style="width: 0px;"
+            aria-label="cash in: activate to sort column ascending">cash in
+        </th>
+        <th class="sorting" tabindex="0" aria-controls="poker_session_14" rowspan="1" colspan="1" style="width: 0px;"
+            aria-label="cash out: activate to sort column ascending">cash out
+        </th>
+        <th class="sorting" tabindex="0" aria-controls="poker_session_14" rowspan="1" colspan="1" style="width: 0px;"
+            aria-label="total: activate to sort column ascending">total
+        </th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr class="odd">
+        <td class="sorting_1">alkis</td>
+        <td>80</td>
+        <td>70</td>
+        <td>-10</td>
+    </tr>
+    <tr class="even">
+        <td class="sorting_1">george</td>
+        <td>120</td>
+        <td>65</td>
+        <td>-55</td>
+    </tr>
+    <tr class="odd">
+        <td class="sorting_1">kostas</td>
+        <td>20</td>
+        <td>50</td>
+        <td>30</td>
+    </tr>
+    <tr class="even">
+        <td class="sorting_1">koszorg</td>
+        <td>60</td>
+        <td>25</td>
+        <td>-35</td>
+    </tr>
+    <tr class="odd">
+        <td class="sorting_1">moirotsos</td>
+        <td>70</td>
+        <td>125</td>
+        <td>55</td>
+    </tr>
+    <tr class="even">
+        <td class="sorting_1">tasos</td>
+        <td>100</td>
+        <td>115</td>
+        <td>15</td>
+    </tr>
+    <tr class="odd">
+        <td class="sorting_1">|_ total _|</td>
+        <td>450</td>
+        <td>450</td>
+        <td>0</td>
+    </tr>
+    </tbody>
+</table>
+<br><br><br>
+<table id="poker_session_15" class="display dataTable no-footer" style="width: 60%;"
+       aria-describedby="poker_session_15_info">
+    <caption>4) 22 January 2025 at moirotsos (karagiannis:40:30)</caption>
+    <thead>
+    <tr>
+        <th class="sorting sorting_asc" tabindex="0" aria-controls="poker_session_15" rowspan="1" colspan="1"
+            style="width: 0px;" aria-sort="ascending" aria-label="player: activate to sort column descending">player
+        </th>
+        <th class="sorting" tabindex="0" aria-controls="poker_session_15" rowspan="1" colspan="1" style="width: 0px;"
+            aria-label="cash in: activate to sort column ascending">cash in
+        </th>
+        <th class="sorting" tabindex="0" aria-controls="poker_session_15" rowspan="1" colspan="1" style="width: 0px;"
+            aria-label="cash out: activate to sort column ascending">cash out
+        </th>
+        <th class="sorting" tabindex="0" aria-controls="poker_session_15" rowspan="1" colspan="1" style="width: 0px;"
+            aria-label="total: activate to sort column ascending">total
+        </th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr class="odd">
+        <td class="sorting_1">alkis</td>
+        <td>60</td>
+        <td>0</td>
+        <td>-60</td>
+    </tr>
+    <tr class="even">
+        <td class="sorting_1">kostas</td>
+        <td>20</td>
+        <td>30</td>
+        <td>10</td>
+    </tr>
+    <tr class="odd">
+        <td class="sorting_1">koszorg</td>
+        <td>60</td>
+        <td>65</td>
+        <td>5</td>
+    </tr>
+    <tr class="even">
+        <td class="sorting_1">koulouris</td>
+        <td>80</td>
+        <td>0</td>
+        <td>-80</td>
+    </tr>
+    <tr class="odd">
+        <td class="sorting_1">moirotsos</td>
+        <td>70</td>
+        <td>95</td>
+        <td>25</td>
+    </tr>
+    <tr class="even">
+        <td class="sorting_1">tsili</td>
+        <td>20</td>
+        <td>130</td>
+        <td>110</td>
+    </tr>
+    <tr class="odd">
+        <td class="sorting_1">|_ total _|</td>
+        <td>310</td>
+        <td>320</td>
+        <td>10</td>
+    </tr>
+    </tbody>
+</table>
+<br><br><br>
+<table id="poker_session_16" class="display dataTable no-footer" style="width: 60%;"
+       aria-describedby="poker_session_16_info">
+    <caption>3) 16 January 2025 at alkis (karagiannis:40:80)</caption>
+    <thead>
+    <tr>
+        <th class="sorting sorting_asc" tabindex="0" aria-controls="poker_session_16" rowspan="1" colspan="1"
+            style="width: 0px;" aria-sort="ascending" aria-label="player: activate to sort column descending">player
+        </th>
+        <th class="sorting" tabindex="0" aria-controls="poker_session_16" rowspan="1" colspan="1" style="width: 0px;"
+            aria-label="cash in: activate to sort column ascending">cash in
+        </th>
+        <th class="sorting" tabindex="0" aria-controls="poker_session_16" rowspan="1" colspan="1" style="width: 0px;"
+            aria-label="cash out: activate to sort column ascending">cash out
+        </th>
+        <th class="sorting" tabindex="0" aria-controls="poker_session_16" rowspan="1" colspan="1" style="width: 0px;"
+            aria-label="total: activate to sort column ascending">total
+        </th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr class="odd">
+        <td class="sorting_1">alkis</td>
+        <td>80</td>
+        <td>75</td>
+        <td>-5</td>
+    </tr>
+    <tr class="even">
+        <td class="sorting_1">fedza</td>
+        <td>110</td>
+        <td>45</td>
+        <td>-65</td>
+    </tr>
+    <tr class="odd">
+        <td class="sorting_1">kostas</td>
+        <td>20</td>
+        <td>95</td>
+        <td>75</td>
+    </tr>
+    <tr class="even">
+        <td class="sorting_1">koulouris</td>
+        <td>70</td>
+        <td>0</td>
+        <td>-70</td>
+    </tr>
+    <tr class="odd">
+        <td class="sorting_1">moirotsos</td>
+        <td>110</td>
+        <td>85</td>
+        <td>-25</td>
+    </tr>
+    <tr class="even">
+        <td class="sorting_1">tasos</td>
+        <td>45</td>
+        <td>5</td>
+        <td>-40</td>
+    </tr>
+    <tr class="odd">
+        <td class="sorting_1">tsili</td>
+        <td>40</td>
+        <td>130</td>
+        <td>90</td>
+    </tr>
+    <tr class="even">
+        <td class="sorting_1">|_ total _|</td>
+        <td>475</td>
+        <td>435</td>
+        <td>-40</td>
+    </tr>
+    </tbody>
+</table>
+<br><br><br>
+<table id="poker_session_17" class="display dataTable no-footer" style="width: 60%;"
+       aria-describedby="poker_session_17_info">
+    <caption>2) 08 January 2025 at alkis</caption>
+    <thead>
+    <tr>
+        <th class="sorting sorting_asc" tabindex="0" aria-controls="poker_session_17" rowspan="1" colspan="1"
+            style="width: 0px;" aria-sort="ascending" aria-label="player: activate to sort column descending">player
+        </th>
+        <th class="sorting" tabindex="0" aria-controls="poker_session_17" rowspan="1" colspan="1" style="width: 0px;"
+            aria-label="cash in: activate to sort column ascending">cash in
+        </th>
+        <th class="sorting" tabindex="0" aria-controls="poker_session_17" rowspan="1" colspan="1" style="width: 0px;"
+            aria-label="cash out: activate to sort column ascending">cash out
+        </th>
+        <th class="sorting" tabindex="0" aria-controls="poker_session_17" rowspan="1" colspan="1" style="width: 0px;"
+            aria-label="total: activate to sort column ascending">total
+        </th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr class="odd">
+        <td class="sorting_1">alkis</td>
+        <td>40</td>
+        <td>0</td>
+        <td>-40</td>
+    </tr>
+    <tr class="even">
+        <td class="sorting_1">fedza</td>
+        <td>80</td>
+        <td>0</td>
+        <td>-80</td>
+    </tr>
+    <tr class="odd">
+        <td class="sorting_1">george</td>
+        <td>20</td>
+        <td>0</td>
+        <td>-20</td>
+    </tr>
+    <tr class="even">
+        <td class="sorting_1">kostas</td>
+        <td>95</td>
+        <td>65</td>
+        <td>-30</td>
+    </tr>
+    <tr class="odd">
+        <td class="sorting_1">koszorg</td>
+        <td>20</td>
+        <td>55</td>
+        <td>35</td>
+    </tr>
+    <tr class="even">
+        <td class="sorting_1">koulouris</td>
+        <td>60</td>
+        <td>35</td>
+        <td>-25</td>
+    </tr>
+    <tr class="odd">
+        <td class="sorting_1">moirotsos</td>
+        <td>20</td>
+        <td>55</td>
+        <td>35</td>
+    </tr>
+    <tr class="even">
+        <td class="sorting_1">tasos</td>
+        <td>20</td>
+        <td>55</td>
+        <td>35</td>
+    </tr>
+    <tr class="odd">
+        <td class="sorting_1">tsili</td>
+        <td>60</td>
+        <td>150</td>
+        <td>90</td>
+    </tr>
+    <tr class="even">
+        <td class="sorting_1">|_ total _|</td>
+        <td>415</td>
+        <td>415</td>
+        <td>0</td>
+    </tr>
+    </tbody>
+</table>
+<br><br><br>
+<table id="poker_session_18" class="display dataTable no-footer" style="width: 60%;"
+       aria-describedby="poker_session_18_info">
+    <caption>1) 02 January 2025 at alkis</caption>
+    <thead>
+    <tr>
+        <th class="sorting sorting_asc" tabindex="0" aria-controls="poker_session_18" rowspan="1" colspan="1"
+            style="width: 0px;" aria-sort="ascending" aria-label="player: activate to sort column descending">player
+        </th>
+        <th class="sorting" tabindex="0" aria-controls="poker_session_18" rowspan="1" colspan="1" style="width: 0px;"
+            aria-label="cash in: activate to sort column ascending">cash in
+        </th>
+        <th class="sorting" tabindex="0" aria-controls="poker_session_18" rowspan="1" colspan="1" style="width: 0px;"
+            aria-label="cash out: activate to sort column ascending">cash out
+        </th>
+        <th class="sorting" tabindex="0" aria-controls="poker_session_18" rowspan="1" colspan="1" style="width: 0px;"
+            aria-label="total: activate to sort column ascending">total
+        </th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr class="odd">
+        <td class="sorting_1">alkis</td>
+        <td>80</td>
+        <td>90</td>
+        <td>10</td>
+    </tr>
+    <tr class="even">
+        <td class="sorting_1">fedza</td>
+        <td>20</td>
+        <td>90</td>
+        <td>70</td>
+    </tr>
+    <tr class="odd">
+        <td class="sorting_1">george</td>
+        <td>70</td>
+        <td>105</td>
+        <td>35</td>
+    </tr>
+    <tr class="even">
+        <td class="sorting_1">kostas</td>
+        <td>40</td>
+        <td>100</td>
+        <td>60</td>
+    </tr>
+    <tr class="odd">
+        <td class="sorting_1">koszorg</td>
+        <td>90</td>
+        <td>140</td>
+        <td>50</td>
+    </tr>
+    <tr class="even">
+        <td class="sorting_1">koulouris</td>
+        <td>140</td>
+        <td>55</td>
+        <td>-85</td>
+    </tr>
+    <tr class="odd">
+        <td class="sorting_1">moirotsos</td>
+        <td>90</td>
+        <td>55</td>
+        <td>-35</td>
+    </tr>
+    <tr class="even">
+        <td class="sorting_1">tasos</td>
+        <td>60</td>
+        <td>0</td>
+        <td>-60</td>
+    </tr>
+    <tr class="odd">
+        <td class="sorting_1">tsili</td>
+        <td>40</td>
+        <td>45</td>
+        <td>5</td>
+    </tr>
+    <tr class="even">
+        <td class="sorting_1">zak</td>
+        <td>100</td>
+        <td>50</td>
+        <td>-50</td>
+    </tr>
+    <tr class="odd">
+        <td class="sorting_1">|_ total _|</td>
+        <td>730</td>
+        <td>730</td>
+        <td>0</td>
+    </tr>
+    </tbody>
+</table>
+
+
+</body>
+</html>

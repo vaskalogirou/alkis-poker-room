@@ -24,7 +24,7 @@ public class PokerSessionController {
     }
 
     @GetMapping
-    public List<PokerSessionDto> getPokerSessions(@RequestParam(defaultValue = "SEASON_2025_A") Season season) {
+    public List<PokerSessionDto> getPokerSessions(@RequestParam(defaultValue = "SEASON_2025_B") Season season) {
         return pokerSessionService.getAllBySeason(season);
     }
 

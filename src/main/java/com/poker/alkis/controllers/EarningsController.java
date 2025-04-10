@@ -25,7 +25,7 @@ public class EarningsController {
 
     @GetMapping
     public List<EarningsDto> getEarnings(@RequestParam(defaultValue = "ACTIVE") PlayerListType type,
-                                         @RequestParam(defaultValue = "SEASON_2025_A") Season season) {
+                                         @RequestParam(defaultValue = "SEASON_2025_B") Season season) {
         return earningsService.getEarnings(type, season);
     }
 

@@ -33,7 +33,7 @@ public class FtpCommunicationController {
     private final ObjectMapper objectMapper;
 
     @GetMapping(value = "send")
-    public String sendToFtp(@RequestParam String password, @RequestParam(defaultValue = "SEASON_2025_A") Season season) {
+    public String sendToFtp(@RequestParam String password, @RequestParam(defaultValue = "SEASON_2025_B") Season season) {
         if (!password.equals(Constants.PASSWORD)) {
             throw new UnauthorizedException("Wrong password");
         }
