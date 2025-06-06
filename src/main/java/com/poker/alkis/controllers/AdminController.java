@@ -3,6 +3,7 @@ package com.poker.alkis.controllers;
 import com.poker.alkis.entities.Player;
 import com.poker.alkis.entities.PokerSession;
 import com.poker.alkis.entities.Result;
+import com.poker.alkis.enums.Season;
 import com.poker.alkis.exceptions.UnauthorizedException;
 import com.poker.alkis.helper.Constants;
 import com.poker.alkis.repos.PokerSessionRepo;
@@ -14,6 +15,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.Arrays;
 import java.util.List;
 
 @RestController
@@ -35,10 +37,14 @@ public class AdminController {
     }
 
     @GetMapping(value = "process")
-    public String process(@RequestParam String password) {
+    public String process(@RequestParam String password, @RequestParam(defaultValue = "SEASON_2025_B") Season season) {
         if (!password.equals(Constants.PASSWORD)) {
             throw new UnauthorizedException("Wrong password");
         }
+
+        var sessions = pokerSessionRepo.findAllBySeason(season);
+
+        readPlayersFromNotesAndUpdatePokerSessions(sessions);
 
         return "all seems good!";
     }
@@ -48,18 +54,22 @@ public class AdminController {
                      .filter(pokerSession -> StringUtils.isNotBlank(pokerSession.getNotes()))
                      .forEach(pokerSession -> {
                          String notes = pokerSession.getNotes().trim();
-                         String[] tokens = notes.split(":");
-                         String playerName = tokens[0];
-                         Integer cashIn = Integer.valueOf(tokens[1]);
-                         Integer cashOut = Integer.valueOf(tokens[2]);
 
-                         Player player = playerService.getOrCreatePlayer(playerName);
+                         Arrays.stream(notes.split(","))
+                               .forEach(resultStr -> {
+                                   String[] tokens = resultStr.split(":");
+                                   String playerName = tokens[0];
+                                   Integer cashIn = Integer.valueOf(tokens[1]);
+                                   Integer cashOut = Integer.valueOf(tokens[2]);
 
-                         Result result = new Result(player, pokerSession, cashIn, cashOut);
-                         pokerSession.getResults().add(result);
+                                   Player player = playerService.getOrCreatePlayer(playerName);
 
-                         pokerSession.setNotes(null);
-                         pokerSessionRepo.saveAndFlush(pokerSession);
+                                   Result result = new Result(player, pokerSession, cashIn, cashOut);
+                                   pokerSession.getResults().add(result);
+
+                                   pokerSession.setNotes(null);
+                                   pokerSessionRepo.saveAndFlush(pokerSession);
+                               });
                      });
     }
 
