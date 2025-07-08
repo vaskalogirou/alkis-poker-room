@@ -22,7 +22,7 @@ spring:
     database: POSTGRESQL
 
 ftp:
-  host: 185.138.42.187
+  host: 213.158.90.239
   username: alkis
   password: ${FTP_SAKITO_PASSWORD}
   directory: ""
