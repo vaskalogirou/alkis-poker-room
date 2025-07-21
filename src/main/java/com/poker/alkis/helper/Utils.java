@@ -15,6 +15,9 @@ public class Utils {
     }
 
     public static void loadPercentages(List<PlayerParticipationDto> participations, int totalNumberOfGames) {
+        if (totalNumberOfGames == 0) {
+            throw new ArithmeticException("Cannot calculate percentages: totalNumberOfGames is zero.");
+        }
         participations.forEach(p -> p.setPercentage((double) p.getNumberOfGames() * 100 / totalNumberOfGames));
     }
 
